@@ -10,16 +10,6 @@
     src: url(./assets/fonts/PTSherif/PTSerif-Regular.ttf);
 }
 
-@font-face {
-    font-family: Oswald;
-    src: url(./assets/fonts/Oswald/static/Oswald-Medium.ttf);
-}
-
-@font-face {
-    font-family: Kanit;
-    src: url(./assets/fonts/Oswald/static/Oswald-Medium.ttf);
-}
-
 * {
     margin: 0;
     padding: 0;
