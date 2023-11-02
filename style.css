@@ -102,7 +102,7 @@ a:active {
 }
 
 header {
-    height: 655px;
+    height: 100vh;
     background: url(./assets/img/BG1.jpeg) center/cover;
 }
 
