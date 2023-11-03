@@ -328,7 +328,7 @@ a:active {
     height: 30%;
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     margin-bottom: 20px;
 }
@@ -336,10 +336,8 @@ a:active {
 .hb-1 div {
     padding: 20px 30px;
     height: 500px;
-    width: 48%;
+    width: 49%;
     background: #00000047;
-    display: block;
-    margin: 0 auto;
     text-align: center;
     backdrop-filter: blur(50px);
     border-radius: 20px;
@@ -392,7 +390,7 @@ a:active {
     box-shadow: 0px 5px 30px black;
     padding: 20px 30px;
     height: 100%;
-    width: 98%;
+    width: 100%;
     display: block;
     margin: 5px auto;
     text-align: center;
@@ -444,7 +442,7 @@ a:active {
     box-shadow: 0px 5px 30px black;
     padding: 20px 30px;
     height: 450px;
-    width: 98%;
+    width: 100%;
     display: block;
     margin: 5px auto;
     text-align: center;
@@ -497,6 +495,7 @@ a:active {
 .pb-1 {
     padding: 20px 30px;
     height: 500px;
+    width: 100%;
     text-align: center;
     border: 3px solid rgb(235, 106, 87);
     box-shadow: 0px 5px 30px black;
