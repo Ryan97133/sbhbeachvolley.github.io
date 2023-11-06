@@ -8,10 +8,12 @@
 @font-face {
     font-family: Roboto;
     src: url(./assets/fonts/Roboto/Roboto-Light.ttf);
+    font-display: swap;
 }
 @font-face {
     font-family: Roboto-Bold;
-    src: url(./assets/fonts/Roboto/Roboto-Bold.ttf)
+    src: url(./assets/fonts/Roboto/Roboto-Bold.ttf);
+    font-display: swap;
 }
 
 * {
@@ -71,7 +73,7 @@ a span {
 
 header {
     height: 100vh;
-    background: url(./assets/img/BG2.jpg) center/cover;
+    background: url(./assets/img/BG2.webp) center/cover;
 }
 
 nav {
@@ -102,6 +104,8 @@ nav a {
     text-decoration: none;
     transition: 1s;
     color: white; 
+    height: 100%;
+    width: 100%;
 }
 nav a:hover {
     letter-spacing: 3px;
@@ -357,8 +361,8 @@ footer {
     align-items: center;
 }
 .icon-container li {
-    height: 50px;
-    width: 50px;
+    height: 60px;
+    width: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
