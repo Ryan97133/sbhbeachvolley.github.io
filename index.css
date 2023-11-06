@@ -70,7 +70,7 @@ a span {
 }
 
 header {
-    height: 655px;
+    height: 100vh;
     background: url(./assets/img/BG2.jpg) center/cover;
 }
 
