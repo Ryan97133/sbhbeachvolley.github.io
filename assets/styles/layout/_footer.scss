@@ -1,0 +1,105 @@
+footer {
+    height: 250px;
+    width: 100%;
+    background: rgb(27,35,42);
+
+    .footer-container {
+        height: 100%;
+        width: 100%;
+        padding: 20px 80px;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 2fr;
+        grid-template-areas: 
+        "fl fr"
+        "fb fb";
+        position: relative;
+
+        &::after {
+            content: "";
+            position: absolute;
+            height: 1px;
+            width: 83%;
+            background: rgb(226,57,106);
+            bottom: 35%;
+            transform: translateX(10%);
+        }   
+
+        .footer-left {
+            grid-area: fl;
+            height: 150px;
+            width: 100%;
+            padding-left: 20px;
+            text-align: left;
+
+            img {
+                height: 70px;
+                margin-bottom: 20px;
+            }
+
+            p {
+                font-size: 1.1rem;
+                font-weight: 500;
+                padding-left: 20px;
+            }
+        }
+        .footer-right {
+            grid-area: fr;
+            height: 150px;
+            width: 100%;
+            @include center-content-c-c;
+
+            .icon-container {
+                height: 150%;
+                width: 100%;
+                padding: 20px 0;
+                display: flex;
+                justify-content: right;
+                align-items: center;
+
+                ul {
+                    height: 100%;
+                    width: 50%;
+                    padding-top: 40px;
+                    @include center-content-se-c;
+
+                    li {
+                        height: 50px;
+                        width: 50px;
+                        @include center-content-c-c;
+
+                        a {
+                            height: 100%;
+                            width: 100%;
+                            @include center-content-c-c;
+                            text-decoration: none;
+
+                            #icon-footer {
+                                height: 100%;
+                                width: 100%;
+                                color: rgb(27,35,42);
+                                background: rgb(226,57,106);
+                                border-radius: 30px;
+                                @include center-content-c-c;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .footer-bottom {
+            grid-area: fb;
+            height: 60px;
+            width: 100%;
+            @include center-content-c-c;
+
+            p {
+                font-weight: 500;
+                font-style: italic;
+            }
+        }
+    }
+}
+
+

@@ -183,8 +183,7 @@ h1 {
 
 section {
     min-height: 1000px;
-    background: white
-    center/cover;
+    background: white;
     color: black;
 }
 .main-part {
@@ -361,8 +360,8 @@ footer {
     align-items: center;
 }
 .icon-container li {
-    height: 60px;
-    width: 60px;
+    height: 50px;
+    width: 50px;
     display: flex;
     justify-content: center;
     align-items: center;

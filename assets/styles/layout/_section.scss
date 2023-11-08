@@ -1,0 +1,108 @@
+section {
+    min-height: 1000px;
+    background: white;
+    color: $black;
+
+    .main-part {
+        padding: 40px 80px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: left;
+
+        h2 {
+            width: 40%;
+            font-size: 2.5rem;
+            font-weight: 600;
+            margin-bottom: 50px;
+        }
+
+        h3 {
+            font-family: 'Roboto-Bold';
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+        }
+
+        p {
+            line-height: 30px;
+        }
+
+        .main-event {
+            height: 450px;
+            @include center-content-sb-c;
+
+            .box-event {
+                height: 350px;
+                width: 25%;
+                padding: 0px 20px;
+                background: rgb(245,245,245);
+                border-radius: 20px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                align-items: last baseline;
+
+                #icon-event {
+                    height: 12%;
+                    width: 40px;
+                    margin-bottom: 10px;
+                    color: white;
+                    background: rgb(226,57,106);
+                    border-radius: 50px;
+                    @include center-content-c-c;
+                }
+            }
+        }
+    }
+    .main-news {
+        height: 500px;
+        @include center-content-sb-c;
+
+        .box-news {
+            height: 700px;
+            @include center-content-c-c;
+            flex-direction: column;
+
+            .box-news-container {
+                @include center-content-sa-c;
+                
+                .infos-container {
+                    @include center-content-se-c;
+                    flex-direction: column;
+                    height: 100%;
+                    width: 50%;
+
+                    .partner {
+                        height: 100px;
+                        width: 250px;
+                        @include center-content-se-c;
+                        background: rgb(245,245,245);
+                        border-radius: 20px;
+                        text-align: center;
+
+                        img {
+                            height: 80px;
+                        }
+                        a {
+                            height: 100%;
+                            width: 100%;
+                            text-decoration: none;
+                            color: black;
+                            font-family: 'Roboto-Bold';
+                            @include center-content-se-c;
+                        }
+
+                        #icon-section {
+                            height: 50px;
+                            width: 50px;
+                            color: rgb(27,35,42);
+                            background: rgb(226,57,106);
+                            border-radius: 30px;
+                            @include center-content-c-c
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

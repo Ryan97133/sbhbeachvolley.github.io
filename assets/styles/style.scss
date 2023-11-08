@@ -1,0 +1,56 @@
+// Color
+$white: white;
+$black: black;
+
+// Mixins
+@mixin center-content-c-c {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin center-content-sa-c {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+@mixin center-content-se-c {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+@mixin center-content-sb-c {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+    body {
+        min-height: 100vh;
+        font-family: 'Roboto', sans-serif;
+        color: $white;
+        
+        .wrapper {
+
+            // Background
+            @import './pages/background';
+            
+            // Font
+            @import "./pages/font";
+
+            @import "./components/button";
+    
+            @import "./layout/header";
+
+            @import "./layout/section";
+
+            @import "./layout/footer";
+
+        }
+    }
