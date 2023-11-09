@@ -23,7 +23,7 @@
 
 body {
   min-height: 100vh;
-  font-family: Roboto-Light, sans-serif;
+  font-family: "Roboto-Light", sans-serif;
   color: black;
 }
 
@@ -33,12 +33,16 @@ html {
 
 li {
   list-style-type: none;
-  cursor: pointer;
 }
 
 a, a:visited {
   text-decoration: none;
   cursor: pointer;
+}
+
+p {
+  font-size: 1rem;
+  letter-spacing: 1px;
 }
 
 .href-top a {
@@ -104,7 +108,7 @@ a, a:visited {
 header {
   height: 100vh;
   color: white;
-  background-image: url("//assets/img/BG4.png") center/cover;
+  background: rgba(0, 0, 0, 0.2);
 }
 header nav {
   height: 11%;
@@ -141,7 +145,7 @@ header nav ul li a {
   height: 100%;
   width: 100%;
 }
-header nav ul li a a:hover {
+header nav ul li a:hover {
   letter-spacing: 3px;
   font-size: 1.2rem;
 }
@@ -167,7 +171,7 @@ header .main-header .main-header-container {
 }
 header .main-header .main-header-container .main-header-text {
   height: 100%;
-  width: 33%;
+  width: 50%;
   padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -184,18 +188,21 @@ header .main-header .main-header-container .main-header-text {
           align-items: left;
 }
 header .main-header .main-header-container .main-header-text h1 {
-  font-size: 3rem;
+  font-size: 2.8rem;
   text-align: left;
   margin-bottom: 20px;
-  font-family: Roboto-Bold;
+  font-family: "Roboto-Bold", sans-serif;
   color: white;
 }
-header .main-header .main-header-container .main-header-text .style-title-color {
+header .main-header .main-header-container .main-header-text h1 .style-title-color {
   background: -webkit-gradient(linear, left top, right top, from(rgb(223, 51, 107)), color-stop(9%, rgb(233, 68, 106)), color-stop(18%, rgb(229, 79, 95)), color-stop(27%, rgb(234, 104, 88)), color-stop(36%, rgb(242, 120, 79)), color-stop(45%, rgb(228, 148, 73)), color-stop(54%, rgb(244, 166, 51)), color-stop(67%, rgb(234, 195, 98)), color-stop(78%, rgb(156, 130, 65)), color-stop(88%, rgb(214, 225, 220)), to(rgb(156, 219, 234)));
   background: linear-gradient(90deg, rgb(223, 51, 107) 0%, rgb(233, 68, 106) 9%, rgb(229, 79, 95) 18%, rgb(234, 104, 88) 27%, rgb(242, 120, 79) 36%, rgb(228, 148, 73) 45%, rgb(244, 166, 51) 54%, rgb(234, 195, 98) 67%, rgb(156, 130, 65) 78%, rgb(214, 225, 220) 88%, rgb(156, 219, 234) 100%);
   background-clip: border-box;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+header .main-header .main-header-container .main-header-text #ht1 {
+  width: 80%;
 }
 header .main-header .main-header-container .main-header-text .style-title-text-color {
   background: rgb(226, 57, 106);
@@ -208,7 +215,7 @@ header .main-header .main-header-container .main-header-text .style-box-header {
   background: rgba(0, 0, 0, 0.2784313725);
   border-radius: 20px;
   padding: 10px;
-  width: 85%;
+  width: 81%;
   margin: 0;
 }
 header .main-header .main-header-container .main-header-text .style-box-header .style-text-infos-color {
@@ -220,7 +227,7 @@ header .main-header .main-header-container .main-header-text .style-box-header .
 }
 header .main-header .main-header-container .main-header-video {
   height: 80%;
-  width: 50%;
+  width: 45%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -259,19 +266,20 @@ section .main-part {
           align-items: left;
 }
 section .main-part h2 {
-  width: 40%;
+  width: 45%;
   font-size: 2.5rem;
   font-weight: 600;
   margin-bottom: 50px;
-  font-family: Roboto-Bold;
+  font-family: "Roboto-Bold", sans-serif;
 }
 section .main-part h3 {
-  font-family: Roboto-Bold;
+  font-family: "Roboto-Bold", sans-serif;
   font-size: 1.5rem;
   margin-bottom: 20px;
 }
 section .main-part p {
   line-height: 30px;
+  font-size: 0.9rem;
 }
 section .main-part .main-event {
   height: 450px;
@@ -376,6 +384,10 @@ section .main-news .box-news .box-news-container .infos-container {
           flex-direction: column;
   height: 100%;
   width: 50%;
+}
+section .main-news .box-news .box-news-container .infos-container p {
+  font-size: 0.9rem;
+  text-align: center;
 }
 section .main-news .box-news .box-news-container .infos-container .partner {
   height: 100px;

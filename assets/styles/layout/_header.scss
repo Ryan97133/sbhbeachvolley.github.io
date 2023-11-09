@@ -1,7 +1,7 @@
 header {
     height: 100vh;
     color: $white;
-    background-image: url('//assets/img/BG4.png') center/cover;
+    background: rgba(0, 0, 0, 0.2);
 
     nav {
         height: 11%;
@@ -28,7 +28,7 @@ header {
                     height: 100%;
                     width: 100%;
 
-                    a:hover {
+                    &:hover {
                         letter-spacing: 3px;
                         font-size: 1.2rem;
                     }
@@ -51,7 +51,7 @@ header {
 
             .main-header-text {
                 height: 100%;
-                width: 33%;
+                width: 50%;
                 padding: 0;
                 display: flex;
                 flex-direction: column;
@@ -59,18 +59,23 @@ header {
                 align-items: left;
 
                 h1 {
-                    font-size: 3rem;
+                    font-size: 2.8rem;
                     text-align: left;
                     margin-bottom: 20px;
-                    font-family: $font2;
+                    font-family: $font2, sans-serif;
                     color: $white;
+
+                    .style-title-color {
+                        background: linear-gradient(90deg, rgba(223, 51, 107, 1) 0%, rgba(233, 68, 106, 1) 9%, rgba(229, 79, 95, 1) 18%, rgba(234, 104, 88, 1) 27%, rgba(242, 120, 79, 1) 36%, rgba(228, 148, 73, 1) 45%, rgba(244, 166, 51, 1) 54%, rgba(234, 195, 98, 1) 67%, rgba(156, 130, 65, 1) 78%, rgba(214, 225, 220, 1) 88%, rgba(156, 219, 234, 1) 100%);
+                        background-clip: border-box;
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                    }
                 }
-                .style-title-color {
-                    background: linear-gradient(90deg, rgba(223, 51, 107, 1) 0%, rgba(233, 68, 106, 1) 9%, rgba(229, 79, 95, 1) 18%, rgba(234, 104, 88, 1) 27%, rgba(242, 120, 79, 1) 36%, rgba(228, 148, 73, 1) 45%, rgba(244, 166, 51, 1) 54%, rgba(234, 195, 98, 1) 67%, rgba(156, 130, 65, 1) 78%, rgba(214, 225, 220, 1) 88%, rgba(156, 219, 234, 1) 100%);
-                    background-clip: border-box;
-                    -webkit-background-clip: text;
-                    -webkit-text-fill-color: transparent;
+                #ht1 {
+                    width: 80%;
                 }
+
                 .style-title-text-color {
                     background: rgb(226,57,106);
                     background-clip: border-box;
@@ -82,7 +87,7 @@ header {
                     background: #00000047;
                     border-radius: 20px;
                     padding: 10px;
-                    width: 85%;
+                    width: 81%;
                     margin: 0;
 
                     .style-text-infos-color {
@@ -96,7 +101,7 @@ header {
             }
             .main-header-video {
                 height: 80%;
-                width: 50%;
+                width: 45%;
                 @include center-content-c-c;
 
                 .YTB {

@@ -11,21 +11,22 @@ section {
         align-items: left;
 
         h2 {
-            width: 40%;
+            width: 45%;
             font-size: 2.5rem;
             font-weight: 600;
             margin-bottom: 50px;
-            font-family: $font2;
+            font-family: $font2, sans-serif;
         }
 
         h3 {
-            font-family: $font2;
+            font-family: $font2, sans-serif;
             font-size: 1.5rem;
             margin-bottom: 20px;
         }
 
         p {
             line-height: 30px;
+            font-size: .9rem;
         }
 
         .main-event {
@@ -72,6 +73,11 @@ section {
                     flex-direction: column;
                     height: 100%;
                     width: 50%;
+
+                    p {
+                        font-size: .9rem;
+                        text-align: center;
+                    }
 
                     .partner {
                         height: 100px;
