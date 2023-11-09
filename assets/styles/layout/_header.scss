@@ -3,6 +3,24 @@ header {
     color: $white;
     background: rgba(0, 0, 0, 0.2);
 
+    &:before {
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        background: $black;
+        animation: AnimBefore 1.5s ease forwards;
+        animation-delay: 0.15s;
+
+        @keyframes AnimBefore {
+            to {
+                opacity: 0;
+            }
+        }
+    }
+
     nav {
         height: 11%;
         padding: 10px 20px;
@@ -32,7 +50,7 @@ header {
                         letter-spacing: 3px;
                         font-size: 1.2rem;
                     }
-
+                    
                     img {
                         height: 45px;
                     }
@@ -89,6 +107,7 @@ header {
                     padding: 10px;
                     width: 81%;
                     margin: 0;
+
 
                     .style-text-infos-color {
                         background: rgb(156,219,234);

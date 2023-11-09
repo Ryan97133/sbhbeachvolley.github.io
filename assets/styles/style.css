@@ -110,6 +110,29 @@ header {
   color: white;
   background: rgba(0, 0, 0, 0.2);
 }
+header:before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: black;
+  -webkit-animation: AnimBefore 1.5s ease forwards;
+          animation: AnimBefore 1.5s ease forwards;
+  -webkit-animation-delay: 0.15s;
+          animation-delay: 0.15s;
+}
+@-webkit-keyframes AnimBefore {
+  to {
+    opacity: 0;
+  }
+}
+@keyframes AnimBefore {
+  to {
+    opacity: 0;
+  }
+}
 header nav {
   height: 11%;
   padding: 10px 20px;
@@ -295,7 +318,7 @@ section .main-part .main-event {
 }
 section .main-part .main-event .box-event {
   height: 350px;
-  width: 25%;
+  width: 26%;
   padding: 0px 20px;
   background: whitesmoke;
   border-radius: 20px;
