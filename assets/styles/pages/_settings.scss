@@ -1,0 +1,77 @@
+// Color
+$white: white;
+$whitesmoke: whitesmoke;
+$black: black;
+
+// Font 
+
+$font1 : Roboto-Light;
+@font-face {
+    font-family: 'Roboto-Light';
+    src: url('//assets/fonts/Roboto/Roboto-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  $font2 : Roboto-Bold;
+@font-face {
+    font-family: 'Roboto-Bold';
+    src: url('//assets/fonts/Roboto/Roboto-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+
+
+// Mixins
+@mixin center-content-c-c {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin center-content-sa-c {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+@mixin center-content-se-c {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+@mixin center-content-sb-c {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+// Global settings
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+body {
+    min-height: 100vh;
+    font-family: $font1, sans-serif;
+    color: $black;
+}
+
+// Scroll lower
+html {
+    scroll-behavior: smooth;
+}
+
+li {
+    list-style-type: none;
+    cursor: pointer;
+}
+
+a, a:visited {
+    text-decoration: none;
+    cursor: pointer;
+}

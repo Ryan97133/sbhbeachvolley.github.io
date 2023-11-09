@@ -1,3 +1,15 @@
+@font-face {
+  font-family: "Roboto-Light";
+  src: url("//assets/fonts/Roboto/Roboto-Light.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto-Bold";
+  src: url("//assets/fonts/Roboto/Roboto-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 * {
   margin: 0;
   padding: 0;
@@ -11,26 +23,25 @@
 
 body {
   min-height: 100vh;
-  font-family: "Roboto", sans-serif;
-  color: white;
+  font-family: Roboto-Light, sans-serif;
+  color: black;
 }
-body .wrapper {
-  @import '//assets/img/BG2.webp';
-  @import url("//assets/fonts/Roboto");
+
+html {
+  scroll-behavior: smooth;
 }
-@font-face {
-  font-family: "Roboto-Light";
-  src: url("//assets/fonts/Roboto/Roboto-Light.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
+
+li {
+  list-style-type: none;
+  cursor: pointer;
 }
-@font-face {
-  font-family: "Roboto-Bold";
-  src: url("//assets/fonts/Roboto/Roboto-Bold.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
+
+a, a:visited {
+  text-decoration: none;
+  cursor: pointer;
 }
-body .wrapper .href-top a {
+
+.href-top a {
   text-decoration: none;
   color: black;
   font-size: 1.3rem;
@@ -57,14 +68,15 @@ body .wrapper .href-top a {
   rotate: -90deg;
   cursor: pointer;
 }
-body .wrapper .href-top a a:active {
+.href-top a a:active {
   -webkit-transform: scale(1.3);
           transform: scale(1.3);
 }
-body .wrapper .href-top a span {
+.href-top a span {
   margin-bottom: 1px;
 }
-body .wrapper #a-top:first-of-type:hover {
+
+#a-top:first-of-type:hover {
   -webkit-animation: a-top1 1s infinite;
           animation: a-top1 1s infinite;
 }
@@ -88,14 +100,13 @@ body .wrapper #a-top:first-of-type:hover {
             transform: scale(1);
   }
 }
-body .wrapper header {
+
+header {
   height: 100vh;
-  color: black;
-  background-image: url(//assets/img/BG2.webp);
-  background-size: cover;
-  background-position: center;
+  color: white;
+  background-image: url("//assets/img/BG4.png") center/cover;
 }
-body .wrapper header nav {
+header nav {
   height: 11%;
   padding: 10px 20px;
   display: block;
@@ -103,7 +114,7 @@ body .wrapper header nav {
   background: -webkit-gradient(linear, left top, left bottom, from(rgb(0, 0, 0)), color-stop(20%, rgba(0, 0, 0, 0.77)), color-stop(40%, rgba(0, 0, 0, 0.6027661064)), color-stop(60%, rgba(0, 0, 0, 0.55)), color-stop(80%, rgba(0, 0, 0, 0.4)), color-stop(90%, rgba(0, 0, 0, 0.2610294118)), to(rgba(0, 0, 0, 0)));
   background: linear-gradient(180deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0.77) 20%, rgba(0, 0, 0, 0.6027661064) 40%, rgba(0, 0, 0, 0.55) 60%, rgba(0, 0, 0, 0.4) 80%, rgba(0, 0, 0, 0.2610294118) 90%, rgba(0, 0, 0, 0) 100%);
 }
-body .wrapper header nav ul {
+header nav ul {
   height: 50px;
   width: 100%;
   display: -webkit-box;
@@ -116,37 +127,33 @@ body .wrapper header nav ul {
       -ms-flex-align: center;
           align-items: center;
 }
-body .wrapper header nav ul li {
+header nav ul li {
   width: 100%;
-  list-style-type: none;
-  cursor: pointer;
   text-transform: capitalize;
-  text-decoration: none;
   font-size: 1.1rem;
   text-align: center;
   font-weight: 500;
 }
-body .wrapper header nav ul li a {
-  text-decoration: none;
+header nav ul li a {
   -webkit-transition: 1s;
   transition: 1s;
   color: white;
   height: 100%;
   width: 100%;
 }
-body .wrapper header nav ul li a a:hover {
+header nav ul li a a:hover {
   letter-spacing: 3px;
   font-size: 1.2rem;
 }
-body .wrapper header nav ul li a img {
+header nav ul li a img {
   height: 45px;
 }
-body .wrapper header .main-header {
+header .main-header {
   height: 89%;
   padding: 40px 80px;
   display: block;
 }
-body .wrapper header .main-header .main-header-container {
+header .main-header .main-header-container {
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -158,7 +165,7 @@ body .wrapper header .main-header .main-header-container {
       -ms-flex-align: center;
           align-items: center;
 }
-body .wrapper header .main-header .main-header-container .main-header-text {
+header .main-header .main-header-container .main-header-text {
   height: 100%;
   width: 33%;
   padding: 0;
@@ -176,40 +183,42 @@ body .wrapper header .main-header .main-header-container .main-header-text {
       -ms-flex-align: left;
           align-items: left;
 }
-body .wrapper header .main-header .main-header-container .main-header-text h1 {
+header .main-header .main-header-container .main-header-text h1 {
   font-size: 3rem;
   text-align: left;
   margin-bottom: 20px;
+  font-family: Roboto-Bold;
+  color: white;
 }
-body .wrapper header .main-header .main-header-container .main-header-text .style-title-color {
+header .main-header .main-header-container .main-header-text .style-title-color {
   background: -webkit-gradient(linear, left top, right top, from(rgb(223, 51, 107)), color-stop(9%, rgb(233, 68, 106)), color-stop(18%, rgb(229, 79, 95)), color-stop(27%, rgb(234, 104, 88)), color-stop(36%, rgb(242, 120, 79)), color-stop(45%, rgb(228, 148, 73)), color-stop(54%, rgb(244, 166, 51)), color-stop(67%, rgb(234, 195, 98)), color-stop(78%, rgb(156, 130, 65)), color-stop(88%, rgb(214, 225, 220)), to(rgb(156, 219, 234)));
   background: linear-gradient(90deg, rgb(223, 51, 107) 0%, rgb(233, 68, 106) 9%, rgb(229, 79, 95) 18%, rgb(234, 104, 88) 27%, rgb(242, 120, 79) 36%, rgb(228, 148, 73) 45%, rgb(244, 166, 51) 54%, rgb(234, 195, 98) 67%, rgb(156, 130, 65) 78%, rgb(214, 225, 220) 88%, rgb(156, 219, 234) 100%);
   background-clip: border-box;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-body .wrapper header .main-header .main-header-container .main-header-text .style-title-text-color {
+header .main-header .main-header-container .main-header-text .style-title-text-color {
   background: rgb(226, 57, 106);
   background-clip: border-box;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: 900;
 }
-body .wrapper header .main-header .main-header-container .main-header-text .style-box-header {
+header .main-header .main-header-container .main-header-text .style-box-header {
   background: rgba(0, 0, 0, 0.2784313725);
   border-radius: 20px;
   padding: 10px;
   width: 85%;
   margin: 0;
 }
-body .wrapper header .main-header .main-header-container .main-header-text .style-box-header .style-text-infos-color {
+header .main-header .main-header-container .main-header-text .style-box-header .style-text-infos-color {
   background: rgb(156, 219, 234);
   background-clip: border-box;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: 900;
 }
-body .wrapper header .main-header .main-header-container .main-header-video {
+header .main-header .main-header-container .main-header-video {
   height: 80%;
   width: 50%;
   display: -webkit-box;
@@ -222,18 +231,19 @@ body .wrapper header .main-header .main-header-container .main-header-video {
       -ms-flex-align: center;
           align-items: center;
 }
-body .wrapper header .main-header .main-header-container .main-header-video .YTB {
+header .main-header .main-header-container .main-header-video .YTB {
   width: 100%;
   height: 90%;
   display: block;
   margin: 0 auto;
 }
-body .wrapper section {
+
+section {
   min-height: 1000px;
   background: white;
   color: black;
 }
-body .wrapper section .main-part {
+section .main-part {
   padding: 40px 80px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -248,21 +258,22 @@ body .wrapper section .main-part {
       -ms-flex-align: left;
           align-items: left;
 }
-body .wrapper section .main-part h2 {
+section .main-part h2 {
   width: 40%;
   font-size: 2.5rem;
   font-weight: 600;
   margin-bottom: 50px;
+  font-family: Roboto-Bold;
 }
-body .wrapper section .main-part h3 {
-  font-family: "Roboto-Bold";
+section .main-part h3 {
+  font-family: Roboto-Bold;
   font-size: 1.5rem;
   margin-bottom: 20px;
 }
-body .wrapper section .main-part p {
+section .main-part p {
   line-height: 30px;
 }
-body .wrapper section .main-part .main-event {
+section .main-part .main-event {
   height: 450px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -274,11 +285,11 @@ body .wrapper section .main-part .main-event {
       -ms-flex-align: center;
           align-items: center;
 }
-body .wrapper section .main-part .main-event .box-event {
+section .main-part .main-event .box-event {
   height: 350px;
   width: 25%;
   padding: 0px 20px;
-  background: rgb(245, 245, 245);
+  background: whitesmoke;
   border-radius: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -294,7 +305,7 @@ body .wrapper section .main-part .main-event .box-event {
       -ms-flex-align: last baseline;
           align-items: last baseline;
 }
-body .wrapper section .main-part .main-event .box-event #icon-event {
+section .main-part .main-event .box-event #icon-event {
   height: 12%;
   width: 40px;
   margin-bottom: 10px;
@@ -311,7 +322,7 @@ body .wrapper section .main-part .main-event .box-event #icon-event {
       -ms-flex-align: center;
           align-items: center;
 }
-body .wrapper section .main-news {
+section .main-news {
   height: 500px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -323,7 +334,7 @@ body .wrapper section .main-news {
       -ms-flex-align: center;
           align-items: center;
 }
-body .wrapper section .main-news .box-news {
+section .main-news .box-news {
   height: 700px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -339,7 +350,7 @@ body .wrapper section .main-news .box-news {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-body .wrapper section .main-news .box-news .box-news-container {
+section .main-news .box-news .box-news-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -349,7 +360,7 @@ body .wrapper section .main-news .box-news .box-news-container {
       -ms-flex-align: center;
           align-items: center;
 }
-body .wrapper section .main-news .box-news .box-news-container .infos-container {
+section .main-news .box-news .box-news-container .infos-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -366,7 +377,7 @@ body .wrapper section .main-news .box-news .box-news-container .infos-container 
   height: 100%;
   width: 50%;
 }
-body .wrapper section .main-news .box-news .box-news-container .infos-container .partner {
+section .main-news .box-news .box-news-container .infos-container .partner {
   height: 100px;
   width: 250px;
   display: -webkit-box;
@@ -382,10 +393,10 @@ body .wrapper section .main-news .box-news .box-news-container .infos-container 
   border-radius: 20px;
   text-align: center;
 }
-body .wrapper section .main-news .box-news .box-news-container .infos-container .partner img {
+section .main-news .box-news .box-news-container .infos-container .partner img {
   height: 80px;
 }
-body .wrapper section .main-news .box-news .box-news-container .infos-container .partner a {
+section .main-news .box-news .box-news-container .infos-container .partner a {
   height: 100%;
   width: 100%;
   text-decoration: none;
@@ -401,7 +412,7 @@ body .wrapper section .main-news .box-news .box-news-container .infos-container 
       -ms-flex-align: center;
           align-items: center;
 }
-body .wrapper section .main-news .box-news .box-news-container .infos-container .partner #icon-section {
+section .main-news .box-news .box-news-container .infos-container .partner #icon-section {
   height: 50px;
   width: 50px;
   color: rgb(27, 35, 42);
@@ -417,12 +428,14 @@ body .wrapper section .main-news .box-news .box-news-container .infos-container 
       -ms-flex-align: center;
           align-items: center;
 }
-body .wrapper footer {
+
+footer {
   height: 250px;
   width: 100%;
   background: rgb(27, 35, 42);
+  color: white;
 }
-body .wrapper footer .footer-container {
+footer .footer-container {
   height: 100%;
   width: 100%;
   padding: 20px 80px;
@@ -432,7 +445,7 @@ body .wrapper footer .footer-container {
   grid-template-areas: "fl fr" "fb fb";
   position: relative;
 }
-body .wrapper footer .footer-container::after {
+footer .footer-container::after {
   content: "";
   position: absolute;
   height: 1px;
@@ -442,23 +455,23 @@ body .wrapper footer .footer-container::after {
   -webkit-transform: translateX(10%);
           transform: translateX(10%);
 }
-body .wrapper footer .footer-container .footer-left {
+footer .footer-container .footer-left {
   grid-area: fl;
   height: 150px;
   width: 100%;
   padding-left: 20px;
   text-align: left;
 }
-body .wrapper footer .footer-container .footer-left img {
+footer .footer-container .footer-left img {
   height: 70px;
   margin-bottom: 20px;
 }
-body .wrapper footer .footer-container .footer-left p {
+footer .footer-container .footer-left p {
   font-size: 1.1rem;
   font-weight: 500;
   padding-left: 20px;
 }
-body .wrapper footer .footer-container .footer-right {
+footer .footer-container .footer-right {
   grid-area: fr;
   height: 150px;
   width: 100%;
@@ -472,7 +485,7 @@ body .wrapper footer .footer-container .footer-right {
       -ms-flex-align: center;
           align-items: center;
 }
-body .wrapper footer .footer-container .footer-right .icon-container {
+footer .footer-container .footer-right .icon-container {
   height: 150%;
   width: 100%;
   padding: 20px 0;
@@ -486,7 +499,7 @@ body .wrapper footer .footer-container .footer-right .icon-container {
       -ms-flex-align: center;
           align-items: center;
 }
-body .wrapper footer .footer-container .footer-right .icon-container ul {
+footer .footer-container .footer-right .icon-container ul {
   height: 100%;
   width: 50%;
   padding-top: 40px;
@@ -500,7 +513,7 @@ body .wrapper footer .footer-container .footer-right .icon-container ul {
       -ms-flex-align: center;
           align-items: center;
 }
-body .wrapper footer .footer-container .footer-right .icon-container ul li {
+footer .footer-container .footer-right .icon-container ul li {
   height: 50px;
   width: 50px;
   display: -webkit-box;
@@ -513,7 +526,7 @@ body .wrapper footer .footer-container .footer-right .icon-container ul li {
       -ms-flex-align: center;
           align-items: center;
 }
-body .wrapper footer .footer-container .footer-right .icon-container ul li a {
+footer .footer-container .footer-right .icon-container ul li a {
   height: 100%;
   width: 100%;
   display: -webkit-box;
@@ -525,9 +538,8 @@ body .wrapper footer .footer-container .footer-right .icon-container ul li a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  text-decoration: none;
 }
-body .wrapper footer .footer-container .footer-right .icon-container ul li a #icon-footer {
+footer .footer-container .footer-right .icon-container ul li a #icon-footer {
   height: 100%;
   width: 100%;
   color: rgb(27, 35, 42);
@@ -543,7 +555,7 @@ body .wrapper footer .footer-container .footer-right .icon-container ul li a #ic
       -ms-flex-align: center;
           align-items: center;
 }
-body .wrapper footer .footer-container .footer-bottom {
+footer .footer-container .footer-bottom {
   grid-area: fb;
   height: 60px;
   width: 100%;
@@ -557,7 +569,7 @@ body .wrapper footer .footer-container .footer-bottom {
       -ms-flex-align: center;
           align-items: center;
 }
-body .wrapper footer .footer-container .footer-bottom p {
+footer .footer-container .footer-bottom p {
   font-weight: 500;
   font-style: italic;
 }/*# sourceMappingURL=style.css.map */
