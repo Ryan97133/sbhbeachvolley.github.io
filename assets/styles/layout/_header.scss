@@ -3,30 +3,21 @@ header {
     color: $white;
     background: rgba(0, 0, 0, 0.2);
 
-    &:before {
-        content: "";
-        position: absolute;
-        height: 100%;
-        width: 100%;
-        top: 0;
-        left: 0;
-        background: $black;
-        animation: AnimBefore 1.5s ease forwards;
-        animation-delay: 0.15s;
-
-        @keyframes AnimBefore {
-            to {
-                opacity: 0;
-            }
-        }
-    }
-
     nav {
-        height: 11%;
+        height: 70px;
         padding: 10px 20px;
         display: block;
         margin: 0 auto;
         background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.77) 20%, rgba(0, 0, 0, 0.6027661064425771) 40%, rgba(0, 0, 0, 0.55) 60%, rgba(0, 0, 0, 0.4) 80%, rgba(0, 0, 0, 0.26102941176470584) 90%, rgba(0, 0, 0, 0) 100%);  
+        transform: translateY(-70px);
+        animation: AnimNav 1s ease forwards;
+
+        @keyframes AnimNav {
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
         
         ul {
             height: 50px;
@@ -59,7 +50,7 @@ header {
         }
     }
     .main-header {
-        height: 89%;
+        height: 90%;
         padding: 40px 80px;
         display: block;
 
@@ -75,6 +66,15 @@ header {
                 flex-direction: column;
                 justify-content: space-evenly;
                 align-items: left;
+                transform: translateX(-50px);
+                animation: Animmainheadertext 1s ease forwards;
+
+                @keyframes Animmainheadertext {
+                    to {
+                        opacity: 1;
+                        transform: translateX(0);
+                    }
+                }
 
                 h1 {
                     font-size: 2.8rem;
@@ -122,6 +122,15 @@ header {
                 height: 80%;
                 width: 45%;
                 @include center-content-c-c;
+                transform: translateX(50px);
+                animation: AnimYTB 1s ease forwards;
+
+                @keyframes AnimYTB {
+                    to {
+                        opacity: 1;
+                        transform: translateX(0);
+                    }
+                }
 
                 .YTB {
                     width: 100%;

@@ -59,6 +59,23 @@ body {
     min-height: 100vh;
     font-family: $font1, sans-serif;
     color: $black;
+
+    &:before {
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        background: $black;
+        animation: AnimBefore 1s ease forwards;
+
+        @keyframes AnimBefore {
+            to {
+                opacity: 0;
+            }
+        }
+    }
 }
 
 // Scroll lower

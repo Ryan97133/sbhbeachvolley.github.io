@@ -118,10 +118,8 @@ header:before {
   top: 0;
   left: 0;
   background: black;
-  -webkit-animation: AnimBefore 1.5s ease forwards;
-          animation: AnimBefore 1.5s ease forwards;
-  -webkit-animation-delay: 0.15s;
-          animation-delay: 0.15s;
+  -webkit-animation: AnimBefore 1s ease forwards;
+          animation: AnimBefore 1s ease forwards;
 }
 @-webkit-keyframes AnimBefore {
   to {
@@ -134,12 +132,30 @@ header:before {
   }
 }
 header nav {
-  height: 11%;
+  height: 70px;
   padding: 10px 20px;
   display: block;
   margin: 0 auto;
   background: -webkit-gradient(linear, left top, left bottom, from(rgb(0, 0, 0)), color-stop(20%, rgba(0, 0, 0, 0.77)), color-stop(40%, rgba(0, 0, 0, 0.6027661064)), color-stop(60%, rgba(0, 0, 0, 0.55)), color-stop(80%, rgba(0, 0, 0, 0.4)), color-stop(90%, rgba(0, 0, 0, 0.2610294118)), to(rgba(0, 0, 0, 0)));
   background: linear-gradient(180deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0.77) 20%, rgba(0, 0, 0, 0.6027661064) 40%, rgba(0, 0, 0, 0.55) 60%, rgba(0, 0, 0, 0.4) 80%, rgba(0, 0, 0, 0.2610294118) 90%, rgba(0, 0, 0, 0) 100%);
+  -webkit-transform: translateY(-70px);
+          transform: translateY(-70px);
+  -webkit-animation: AnimNav 1s ease forwards;
+          animation: AnimNav 1s ease forwards;
+}
+@-webkit-keyframes AnimNav {
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes AnimNav {
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
 }
 header nav ul {
   height: 50px;
@@ -176,7 +192,7 @@ header nav ul li a img {
   height: 45px;
 }
 header .main-header {
-  height: 89%;
+  height: 90%;
   padding: 40px 80px;
   display: block;
 }
@@ -209,6 +225,24 @@ header .main-header .main-header-container .main-header-text {
   -webkit-box-align: left;
       -ms-flex-align: left;
           align-items: left;
+  -webkit-transform: translateX(-50px);
+          transform: translateX(-50px);
+  -webkit-animation: Animmainheadertext 1s ease forwards;
+          animation: Animmainheadertext 1s ease forwards;
+}
+@-webkit-keyframes Animmainheadertext {
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+@keyframes Animmainheadertext {
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
 }
 header .main-header .main-header-container .main-header-text h1 {
   font-size: 2.8rem;
@@ -260,6 +294,24 @@ header .main-header .main-header-container .main-header-video {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-transform: translateX(50px);
+          transform: translateX(50px);
+  -webkit-animation: AnimYTB 1s ease forwards;
+          animation: AnimYTB 1s ease forwards;
+}
+@-webkit-keyframes AnimYTB {
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+@keyframes AnimYTB {
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
 }
 header .main-header .main-header-container .main-header-video .YTB {
   width: 100%;
@@ -298,10 +350,9 @@ section .main-part h2 {
 section .main-part h3 {
   font-family: "Roboto-Bold", sans-serif;
   font-size: 1.5rem;
-  margin-bottom: 20px;
 }
 section .main-part p {
-  line-height: 30px;
+  line-height: 20px;
   font-size: 0.9rem;
 }
 section .main-part .main-event {
@@ -339,7 +390,6 @@ section .main-part .main-event .box-event {
 section .main-part .main-event .box-event #icon-event {
   height: 12%;
   width: 40px;
-  margin-bottom: 10px;
   color: white;
   background: rgb(226, 57, 106);
   border-radius: 50px;
