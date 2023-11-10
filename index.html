@@ -17,15 +17,46 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <!--  -->
+    <!-- Link CSS -->
     <link rel="stylesheet" href="./assets/styles/style.css" />
+    <!-- Link logo -->
     <link
       rel="shortcut icon"
       href="./assets/img/Logo transparent sans nom.png"
     />
+    <style>
+      .top-button {
+          position: fixed;
+          z-index: 1;
+          bottom: 20px;
+          right: 20px;
+          background: rgb(226,57,106);
+          background-clip: border-box;
+          color: white;
+          border: 2px solid white;
+          border-radius: 5px;
+          cursor: pointer;
+          padding: 8px 10px;
+          font-size: 18px;
+          transition: background-color 0.3s;
+      }
+
+      .top-button:hover {
+          transform: scale(1.1);
+      }
+  </style>
     <!-- Test sauvegarde -->
   </head>
   <body>
+    <div style="height:0px;"></div>
+    <button class="top-button" onclick="topFunction()"><i class="fa-solid fa-arrow-up"></i></button>
+
+    <script>
+        function topFunction() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
+    </script>
       <header id="top">
         <nav>
           <ul>
@@ -65,8 +96,7 @@
             </li>
             <li>
               <a href="www.google.com" aria-label="Découvrez nos produits"
-                ><i id="icon-shop" class="fa-solid fa-cart-shopping"></i
-              ></a>
+                ><img src="./assets/img/Shop.png" alt="Photo caddie"></a>
             </li>
           </ul>
         </nav>
@@ -137,12 +167,11 @@
                 Saint-Jean :
                 <br />
                 <br />
-                <i class="fa-solid fa-arrow-right" style="color: #000000"></i>
-                Lundi 18h - 22h <br />
-                <i class="fa-solid fa-arrow-right" style="color: #000000"></i>
-                Jeudi : 20h - 22h <br />
-                <i class="fa-solid fa-arrow-right" style="color: #000000"></i>
-                Vendredi : 20h - 22h
+                <span><i id="arrow" class="fa-solid fa-arrow-right" style="color: #000000"></i> Lundi 18h - 22h</span>
+                 <br />
+                <span><i id="arrow" class="fa-solid fa-arrow-right" style="color: #000000"></i> Jeudi : 20h - 22h</span>
+                 <br />
+                <span><i id="arrow" class="fa-solid fa-arrow-right" style="color: #000000"></i> Vendredi : 20h - 22h</span>
               </p>
             </div>
             <div class="box-event">
@@ -152,12 +181,11 @@
                 L'association propose de nombreux évènements locaux à savoir :
                 <br />
                 <br />
-                <i class="fa-solid fa-arrow-right" style="color: #000000"></i>
-                4 tournois locaux <br />
-                <i class="fa-solid fa-arrow-right" style="color: #000000"></i>
-                1 grand évènement annuel <br />
-                <i class="fa-solid fa-arrow-right" style="color: #000000"></i>
-                2 à 3 évènements internes
+                <span><i class="fa-solid fa-arrow-right" style="color: #000000"></i> 4 tournois locaux</span>
+                 <br />
+                <span><i class="fa-solid fa-arrow-right" style="color: #000000"></i> 1 grand évènement annuel</span>
+                 <br />
+                <span><i class="fa-solid fa-arrow-right" style="color: #000000"></i> 2 à 3 évènements internes</span>
               </p>
             </div>
             <div class="box-event">
@@ -166,14 +194,14 @@
               <p>
                 Le Saint Barth Beach Volley propose au moins 1 par an un voyage
                 sportif sur une île voisine.
-                <br />
-                Le dernier voyage a été fait en Martinique avec 2 équipes
-                locales le 31 Septembre 2023.
+                <br /><br>
+                Nous tenons à remercier le club du Rayon en Martinique pour nous avoir invité à leur évènement du 31 Septembre 2023.
               </p>
             </div>
           </div>
           <!-- End main event -->
           <h2>Nos dernières aventures</h2>
+          <p>Avec nous, vous connaîtrez de nombreux pratiquants de Beach-Volley et aggrandirez  <br> votre entourage sportif en voyagant et en partageant des moments au sein de l'association.</p> <br>
           <div class="main-news">
             <div class="box-news">
               <h3>Voyage sportif en Martinique</h3>

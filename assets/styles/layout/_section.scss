@@ -9,6 +9,18 @@ section {
         flex-direction: column;
         justify-content: space-around;
         align-items: left;
+        position: relative;
+
+    &::after {
+        content: "";
+        position: absolute;
+        height: 2px;
+        width: 90%;
+        top: 47%;
+        left: 50%;
+        background: rgb(226,57,106);
+        transform: translateX(-50%);
+    }
 
         h2 {
             width: 45%;
@@ -20,7 +32,7 @@ section {
 
         h3 {
             font-family: $font2, sans-serif;
-            font-size: 1.5rem;
+            font-size: 1.2rem;
         }
 
         p {
@@ -31,6 +43,7 @@ section {
         .main-event {
             height: 450px;
             @include center-content-sb-c;
+            margin-bottom: 50px;
 
             .box-event {
                 height: 350px;
@@ -43,13 +56,26 @@ section {
                 justify-content: space-evenly;
                 align-items: last baseline;
 
+                &:hover {
+                    color: $white;
+                    background: linear-gradient(210deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 18%, rgba(45,26,32,1) 31%, rgba(223,51,107,1) 63%, rgba(234,195,98,1) 100%);
+                }
+
                 #icon-event {
                     height: 12%;
                     width: 40px;
-                    color: white;
+                    color: $whitesmoke;
                     background: rgb(226,57,106);
                     border-radius: 50px;
                     @include center-content-c-c;
+                }
+
+                p {
+                    font-weight: normal;
+                    display: flex;
+                    justify-content: center;
+                    align-items: start;
+                    flex-direction: column;
                 }
             }
         }
@@ -62,6 +88,10 @@ section {
             height: 700px;
             @include center-content-c-c;
             flex-direction: column;
+
+            h3 {
+                margin-bottom: 20px;
+            }
 
             .box-news-container {
                 @include center-content-sa-c;
@@ -92,9 +122,16 @@ section {
                             height: 100%;
                             width: 100%;
                             text-decoration: none;
+                            font-weight: 600;
                             color: black;
-                            font-family: 'Roboto-Bold';
+                            font-family: 'Roboto-Bold', sans-serif;
                             @include center-content-se-c;
+
+                            &:hover {
+                                color: $white;
+                                background: linear-gradient(210deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 18%, rgba(45,26,32,1) 31%, rgba(223,51,107,1) 63%, rgba(234,195,98,1) 100%);
+                                border-radius: 20px;
+                            }
                         }
 
                         #icon-section {
@@ -103,7 +140,8 @@ section {
                             color: rgb(27,35,42);
                             background: rgb(226,57,106);
                             border-radius: 30px;
-                            @include center-content-c-c
+                            @include center-content-c-c;
+                            
                         }
                     }
                 }
