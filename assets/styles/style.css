@@ -74,7 +74,6 @@ header {
 }
 header nav {
   height: 70px;
-  padding: 10px 20px;
   display: block;
   margin: 0 auto;
   background: -webkit-gradient(linear, left top, left bottom, from(rgb(0, 0, 0)), color-stop(20%, rgba(0, 0, 0, 0.77)), color-stop(40%, rgba(0, 0, 0, 0.6027661064)), color-stop(60%, rgba(0, 0, 0, 0.55)), color-stop(80%, rgba(0, 0, 0, 0.4)), color-stop(90%, rgba(0, 0, 0, 0.2610294118)), to(rgba(0, 0, 0, 0)));
@@ -99,7 +98,7 @@ header nav {
   }
 }
 header nav ul {
-  height: 50px;
+  height: 100%;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -111,12 +110,30 @@ header nav ul {
       -ms-flex-align: center;
           align-items: center;
 }
+header nav ul:hover li:not(:hover) {
+  background: none;
+  color: white;
+}
 header nav ul li {
+  height: 100%;
   width: 100%;
   text-transform: capitalize;
   font-size: 1.1rem;
   text-align: center;
   font-weight: 500;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+header nav ul li:nth-child(2) {
+  background: rgba(255, 255, 255, 0.2);
+}
+header nav ul li:hover {
+  letter-spacing: 2px;
+  background: rgba(255, 255, 255, 0.2);
 }
 header nav ul li a {
   -webkit-transition: 0.25s;
@@ -124,11 +141,15 @@ header nav ul li a {
   color: white;
   height: 100%;
   width: 100%;
-}
-header nav ul li a:hover {
-  letter-spacing: 2px;
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 header nav ul li a img {
   height: 45px;
@@ -214,7 +235,7 @@ header .main-header .main-header-container .main-header-text .style-box-header {
   background: rgba(0, 0, 0, 0.2784313725);
   border-radius: 20px;
   padding: 10px;
-  width: 90%;
+  width: 81%;
   margin: 0;
 }
 header .main-header .main-header-container .main-header-text .style-box-header .style-text-infos-color {
@@ -303,7 +324,7 @@ section .main-part h2 {
 }
 section .main-part h3 {
   font-family: "Roboto-Bold", sans-serif;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
 }
 section .main-part p {
   line-height: 20px;
