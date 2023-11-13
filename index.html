@@ -49,15 +49,32 @@
   </head>
   <body>
     <div style="height:0px;"></div>
-    <button class="top-button" onclick="topFunction()"><i class="fa-solid fa-arrow-up"></i></button>
+    <button id="myBtn" class="top-button" onclick="topFunction()" id="myBtn"><i class="fa-solid fa-arrow-up"></i></button>
 
     <script>
         function topFunction() {
             document.body.scrollTop = 0; // For Safari
             document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
         }
+        
     </script>
-      <header id="top">
+    <script>
+      window.onscroll = function() {scrollFunction()};
+
+      function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+              document.getElementById("myBtn").style.display = "block";
+          } else {
+              document.getElementById("myBtn").style.display = "none";
+          }
+      }
+
+      function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+      }
+  </script>
+      <header>
         <nav>
           <ul>
             <li>

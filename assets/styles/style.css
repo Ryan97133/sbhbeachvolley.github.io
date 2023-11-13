@@ -68,8 +68,9 @@ p {
 
 header {
   height: 100vh;
+  width: 100%;
   color: white;
-  background: url(./BG2.webp) center/cover;
+  background: url(../img/BG2.jpg) center/cover;
 }
 header nav {
   height: 70px;
@@ -118,15 +119,16 @@ header nav ul li {
   font-weight: 500;
 }
 header nav ul li a {
-  -webkit-transition: 1s;
-  transition: 1s;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
   color: white;
   height: 100%;
   width: 100%;
 }
 header nav ul li a:hover {
-  letter-spacing: 3px;
-  font-size: 1.2rem;
+  letter-spacing: 2px;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 header nav ul li a img {
   height: 45px;
@@ -199,7 +201,7 @@ header .main-header .main-header-container .main-header-text h1 .style-title-col
   -webkit-text-fill-color: transparent;
 }
 header .main-header .main-header-container .main-header-text #ht1 {
-  width: 80%;
+  width: 70%;
 }
 header .main-header .main-header-container .main-header-text .style-title-text-color {
   background: rgb(226, 57, 106);
@@ -212,7 +214,7 @@ header .main-header .main-header-container .main-header-text .style-box-header {
   background: rgba(0, 0, 0, 0.2784313725);
   border-radius: 20px;
   padding: 10px;
-  width: 81%;
+  width: 90%;
   margin: 0;
 }
 header .main-header .main-header-container .main-header-text .style-box-header .style-text-infos-color {
@@ -224,7 +226,7 @@ header .main-header .main-header-container .main-header-text .style-box-header .
 }
 header .main-header .main-header-container .main-header-video {
   height: 80%;
-  width: 45%;
+  width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
