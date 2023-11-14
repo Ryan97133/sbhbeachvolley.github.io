@@ -29,6 +29,11 @@ header {
                 color: $white;
             }
 
+            li:nth-child(1):hover,
+            li:nth-child(7):hover {
+            background: none;
+            }
+
             li {
                 height: 100%;
                 width: 100%;
@@ -40,21 +45,24 @@ header {
                 align-items: center;
 
                 &:nth-child(2){
-                    background: rgba(255, 255, 255, 0.2);
+                    background: $whitesmoke;
                 }
 
                 &:hover {
-                    letter-spacing: 2px;
-                    background: rgba(255, 255, 255, 0.2);
-
+                    background: $whitesmoke;
                 }
 
                 a {
                     transition: .25s;
+                    letter-spacing: 2px;
                     color: white; 
                     height: 100%;
                     width: 100%;
                     @include center-content-c-c;
+
+                    &:hover {
+                        letter-spacing: 4px;
+                    }
 
                     img {
                         height: 45px;
@@ -107,6 +115,7 @@ header {
                 }
                 #ht1 {
                     width: 70%;
+                    line-height: 20px;
                 }
 
                 .style-title-text-color {
