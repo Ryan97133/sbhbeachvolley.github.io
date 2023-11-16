@@ -2,7 +2,7 @@ header {
     height: 100vh;
     width: 100%;
     color: $white;
-    background: url(../img/BG2.jpg) center/cover;
+    background: url(../img/BG1-2.jpeg) center/cover;
 
     nav {
         height: 70px;
@@ -11,6 +11,8 @@ header {
         background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.77) 20%, rgba(0, 0, 0, 0.6027661064425771) 40%, rgba(0, 0, 0, 0.55) 60%, rgba(0, 0, 0, 0.4) 80%, rgba(0, 0, 0, 0.26102941176470584) 90%, rgba(0, 0, 0, 0) 100%);  
         transform: translateY(-70px);
         animation: AnimNav 1s ease forwards;
+        font-family: roboto-light;
+        font-style: italic;
 
         @keyframes AnimNav {
             to {
@@ -45,11 +47,11 @@ header {
                 align-items: center;
 
                 &:nth-child(2){
-                    background: $whitesmoke;
+                    background: rgba(255, 255, 255, 0.3);
                 }
 
                 &:hover {
-                    background: $whitesmoke;
+                    background: rgba(255, 255, 255, 0.3);
                 }
 
                 a {
@@ -100,10 +102,10 @@ header {
 
 
                 h1 {
-                    font-size: 2.8rem;
+                    font-size: 4rem;
                     text-align: left;
                     margin-bottom: 20px;
-                    font-family: $font2, sans-serif;
+                    font-family: roboto-bold;
                     color: $white;
 
                     .style-title-color {
@@ -114,8 +116,9 @@ header {
                     }
                 }
                 #ht1 {
-                    width: 70%;
-                    line-height: 20px;
+                    width: 80%;
+                    line-height: 30px;
+                    font-size: 1.2rem;
                 }
 
                 .style-title-text-color {
@@ -124,14 +127,18 @@ header {
                     -webkit-background-clip: text;
                     -webkit-text-fill-color: transparent;
                     font-weight: 900;
+
                 }
                 .style-box-header {
                     background: #00000047;
                     border-radius: 20px;
                     padding: 10px;
-                    width: 81%;
+                    width: 80%;
                     margin: 0;
 
+                    #ht2 {
+                        font-size: 1.2rem;
+                    }
 
                     .style-text-infos-color {
                         background: rgb(156,219,234);

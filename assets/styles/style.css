@@ -1,14 +1,10 @@
 @font-face {
-  font-family: "Roboto-Light";
-  src: url("//assets/fonts/Roboto/Roboto-Light.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
+  font-family: Roboto-Light;
+  src: url(../fonts/Roboto/Roboto-Light.ttf);
 }
 @font-face {
-  font-family: "Roboto-Bold";
-  src: url("//assets/fonts/Roboto/Roboto-Bold.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
+  font-family: Roboto-Bold;
+  src: url(../fonts/Roboto/Roboto-Bold.ttf);
 }
 * {
   margin: 0;
@@ -23,7 +19,7 @@
 
 body {
   min-height: 100vh;
-  font-family: "Roboto-Light", sans-serif;
+  font-family: roboto-light;
   color: black;
 }
 body:before {
@@ -70,7 +66,7 @@ header {
   height: 100vh;
   width: 100%;
   color: white;
-  background: url(../img/BG2.jpg) center/cover;
+  background: url(../img/BG1-2.jpeg) center/cover;
 }
 header nav {
   height: 70px;
@@ -82,6 +78,8 @@ header nav {
           transform: translateY(-70px);
   -webkit-animation: AnimNav 1s ease forwards;
           animation: AnimNav 1s ease forwards;
+  font-family: roboto-light;
+  font-style: italic;
 }
 @-webkit-keyframes AnimNav {
   to {
@@ -133,10 +131,10 @@ header nav ul li {
           align-items: center;
 }
 header nav ul li:nth-child(2) {
-  background: rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.3);
 }
 header nav ul li:hover {
-  background: rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.3);
 }
 header nav ul li a {
   -webkit-transition: 0.25s;
@@ -215,10 +213,10 @@ header .main-header .main-header-container .main-header-text {
   }
 }
 header .main-header .main-header-container .main-header-text h1 {
-  font-size: 2.8rem;
+  font-size: 4rem;
   text-align: left;
   margin-bottom: 20px;
-  font-family: "Roboto-Bold", sans-serif;
+  font-family: roboto-bold;
   color: white;
 }
 header .main-header .main-header-container .main-header-text h1 .style-title-color {
@@ -229,8 +227,9 @@ header .main-header .main-header-container .main-header-text h1 .style-title-col
   -webkit-text-fill-color: transparent;
 }
 header .main-header .main-header-container .main-header-text #ht1 {
-  width: 70%;
-  line-height: 20px;
+  width: 80%;
+  line-height: 30px;
+  font-size: 1.2rem;
 }
 header .main-header .main-header-container .main-header-text .style-title-text-color {
   background: rgb(226, 57, 106);
@@ -243,8 +242,11 @@ header .main-header .main-header-container .main-header-text .style-box-header {
   background: rgba(0, 0, 0, 0.2784313725);
   border-radius: 20px;
   padding: 10px;
-  width: 81%;
+  width: 80%;
   margin: 0;
+}
+header .main-header .main-header-container .main-header-text .style-box-header #ht2 {
+  font-size: 1.2rem;
 }
 header .main-header .main-header-container .main-header-text .style-box-header .style-text-infos-color {
   background: rgb(156, 219, 234);
@@ -302,15 +304,15 @@ main h2 {
   width: 45%;
   font-size: 2.5rem;
   margin-bottom: 30px;
-  font-family: "Roboto-Bold", sans-serif;
+  font-family: roboto-bold, sans-serif;
 }
 main h3 {
-  font-family: "Roboto-Bold", sans-serif;
+  font-family: roboto-bold, sans-serif;
   font-size: 1.4rem;
 }
 main p {
   line-height: 20px;
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 main .section1 {
   display: -webkit-box;
@@ -472,8 +474,9 @@ main .section2 .main-news .box-news .box-news-container .infos-container {
   width: 50%;
 }
 main .section2 .main-news .box-news .box-news-container .infos-container p {
-  font-size: 0.9rem;
+  font-size: 1rem;
   text-align: center;
+  line-height: 30px;
 }
 main .section2 .main-news .box-news .box-news-container .infos-container .partner {
   height: 80px;
@@ -500,7 +503,7 @@ main .section2 .main-news .box-news .box-news-container .infos-container .partne
   text-decoration: none;
   font-weight: 600;
   color: black;
-  font-family: "Roboto-Bold", sans-serif;
+  font-family: Roboto-Bold, sans-serif;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

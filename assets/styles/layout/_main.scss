@@ -9,17 +9,17 @@ main {
         width: 45%;
         font-size: 2.5rem;
         margin-bottom: 30px;
-        font-family: $font2, sans-serif;
+        font-family: roboto-bold, sans-serif;
     }
 
     h3 {
-        font-family: $font2, sans-serif;
+        font-family: roboto-bold, sans-serif;
         font-size: 1.4rem;
     }
 
     p {
         line-height: 20px;
-        font-size: .9rem;
+        font-size: 1rem;
     }
 
     .section1 {
@@ -110,8 +110,9 @@ main {
                         width: 50%;
     
                         p {
-                            font-size: .9rem;
+                            font-size: 1rem;
                             text-align: center;
+                            line-height: 30px;
                         }
     
                         .partner {
@@ -131,7 +132,7 @@ main {
                                 text-decoration: none;
                                 font-weight: 600;
                                 color: black;
-                                font-family: 'Roboto-Bold', sans-serif;
+                                font-family: Roboto-Bold, sans-serif;
                                 @include center-content-se-c;
     
                                 &:hover {
