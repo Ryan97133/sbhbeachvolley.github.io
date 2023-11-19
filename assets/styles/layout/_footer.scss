@@ -1,12 +1,9 @@
 footer {
     height: 250px;
-    width: 100%;
     background: rgb(27,35,42);
     color: $white;
 
     .footer-container {
-        height: 100%;
-        width: 100%;
         padding: 20px 80px;
         display: grid;
         grid-template-columns: 50% 50%;
@@ -20,7 +17,7 @@ footer {
             content: "";
             position: absolute;
             height: 1px;
-            width: 83%;
+            width: 84%;
             background: rgb(226,57,106);
             bottom: 35%;
             transform: translateX(10%);
@@ -30,7 +27,7 @@ footer {
             grid-area: fl;
             height: 150px;
             width: 100%;
-            padding-left: 20px;
+            padding-left: 50px;
             text-align: left;
 
             img {
@@ -39,8 +36,7 @@ footer {
             }
 
             p {
-                font-size: 1.1rem;
-                font-weight: 500;
+                font-size: 1rem;
                 padding-left: 20px;
             }
         }
@@ -48,7 +44,7 @@ footer {
             grid-area: fr;
             height: 150px;
             width: 100%;
-            @include center-content-c-c;
+            @include centerChild;
 
             .icon-container {
                 height: 150%;
@@ -62,17 +58,17 @@ footer {
                     height: 100%;
                     width: 50%;
                     padding-top: 40px;
-                    @include center-content-se-c;
+                    @include alignChildren(space-evenly);
 
                     li {
                         height: 50px;
                         width: 50px;
-                        @include center-content-c-c;
+                        @include centerChild;
 
                         a {
                             height: 100%;
                             width: 100%;
-                            @include center-content-c-c;
+                            @include centerChild;
 
                             #icon-footer {
                                 height: 100%;
@@ -80,7 +76,12 @@ footer {
                                 color: rgb(27,35,42);
                                 background: rgb(226,57,106);
                                 border-radius: 30px;
-                                @include center-content-c-c;
+                                @include centerChild;
+                                transition: .3s;
+
+                                &:hover {
+                                    background: white;
+                                }
                             }
                         }
                     }
@@ -92,10 +93,9 @@ footer {
             grid-area: fb;
             height: 60px;
             width: 100%;
-            @include center-content-c-c;
+            @include centerChild;
 
             p {
-                font-weight: 500;
                 font-style: italic;
             }
         }

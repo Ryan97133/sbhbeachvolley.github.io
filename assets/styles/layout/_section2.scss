@@ -1,0 +1,140 @@
+.section2 {
+    grid-area: s2;
+    min-height: 500px;
+    background: rgba(0, 0, 0, 0.6);
+    margin: 15px;
+    padding: 50px 80px;
+    box-shadow: 0px 0px 20px 10px rgba(255, 255, 255, 0.3);
+    color: white;
+    text-align: center;
+
+    h2 {
+        font-size: 2.5rem;
+        text-align: center;
+        color: rgba(255, 255, 255, 0.8);
+        font-family: $fontthinitalic;
+        position: relative;
+
+        &:after {
+            content: "";
+            position: absolute;
+            height: 2px;
+            width: 20%;
+            background: rgba(255, 255, 255, .8);
+            left: 3%;
+            top: 50%;
+        }
+        &::before {
+            content: "";
+            position: absolute;
+            height: 2px;
+            width: 20%;
+            background: rgba(255, 255, 255, .8);
+            right: 3%;
+            top: 50%;
+        }
+    }
+    #style-section2 {
+        font-size: 2.6rem;
+        font-family: $font1;
+        color: $color2;
+        margin-bottom: 50px;
+    }
+    .formular {
+        padding-left: 80px;
+        .formular-top {
+            display: flex;
+            text-align: left;
+            margin-bottom: 40px;
+
+            i {
+                font-size: 1.5rem;
+                color: rgba(255, 255, 255, 0.8);
+            }
+
+            h4 {
+                font-size: 1.4rem;
+                text-transform: uppercase;
+                padding-left: 10px;
+                color: rgba(255, 255, 255, 0.8);
+            }
+        }
+
+        form {
+            width: 100%;
+            margin: 0 auto;
+            text-align: left;
+            display: grid;
+            grid-template-columns: 2fr;
+            grid-template-rows: 2fr;
+            grid-template-areas: 
+            "text-form text-area"
+            "btn btn";
+            gap: 40px;
+            box-sizing: border-box;
+
+            label {
+                text-transform: uppercase;
+                color: rgba(255, 255, 255, 0.8);
+                font-weight: 900;
+                letter-spacing: 3px;
+            }
+
+            input, textarea {
+                background: transparent;
+                color: white;
+                padding: 5px 10px;
+                border: 1px solid rgba(255, 255, 255, 0.8);
+                border-radius: 5px;
+            }
+
+            input {
+                width: 300px;
+                height: 30px;
+            }
+
+            textarea {
+                height: 180px;
+                width: 500px;
+                background: transparent;
+            }
+
+            .text-form {
+                grid-area: text-form;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                gap: 15px;
+               
+            }
+            .text-area {
+                grid-area: text-area;
+                @include centerChild;
+                flex-direction: column;
+                gap: 20px;
+            }
+            .submit-container {
+                @include fullSize;
+                grid-area: btn;
+                @include centerChild;
+
+                input {
+                    height: 55px;
+                    width: 230px;
+                    @include centerChild;
+                    font-size: 1rem;
+                    text-transform: uppercase;
+                    letter-spacing: 3px;
+                    cursor: pointer;
+                    background: rgb(226,57,106);
+                    font-family: $fontbold;
+                    transition: .3s;
+
+                    &:hover {
+                        transform: translateX(5px);
+                    }
+                }
+            }
+        }
+    }
+}
