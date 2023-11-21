@@ -1,5 +1,4 @@
 .section2 {
-    grid-area: s2;
     min-height: 500px;
     background: rgba(0, 0, 0, 0.6);
     margin: 15px;
@@ -8,12 +7,37 @@
     color: white;
     text-align: center;
 
+    @media screen and (max-width: 1250px) {
+        padding: 50px 50px;
+    }
+    @media screen and (max-width: 600px) {
+        padding: 30px 30px;
+    }
+    @media screen and (max-width: 500px) {
+        padding: 30px 10px;
+    }
+
     h2 {
         font-size: 2.5rem;
         text-align: center;
         color: rgba(255, 255, 255, 0.8);
         font-family: $fontthinitalic;
         position: relative;
+
+        @media screen and (max-width: 1150px) {
+            font-size: 1.8rem;
+        }
+
+        @media screen and (max-width: 950px) {
+            font-size: 1.5rem;
+        }
+        @media screen and (max-width: 600px) {
+            font-size: 1.2rem;
+            margin: 0 auto;
+        }
+        @media screen and (max-width: 500px) {
+            font-size: .8rem;
+        }
 
         &:after {
             content: "";
@@ -23,6 +47,14 @@
             background: rgba(255, 255, 255, .8);
             left: 3%;
             top: 50%;
+
+            @media screen and (max-width: 1500px) {
+                width: 10%;
+            }
+
+            @media screen and (max-width: 950px) {
+                display: none;
+            }
         }
         &::before {
             content: "";
@@ -32,6 +64,14 @@
             background: rgba(255, 255, 255, .8);
             right: 3%;
             top: 50%;
+
+            @media screen and (max-width: 1500px) {
+                width: 10%;
+            }
+
+            @media screen and (max-width: 950px) {
+                display: none;
+            }
         }
     }
     #style-section2 {
@@ -39,17 +79,38 @@
         font-family: $font1;
         color: $color2;
         margin-bottom: 50px;
+
+        @media screen and (max-width: 950px) {
+            font-size: 1.4rem;
+        }
+        @media screen and (max-width: 500px) {
+            font-size: 1rem;
+        }
     }
     .formular {
-        padding-left: 80px;
+        min-height: 400px;
         .formular-top {
             display: flex;
             text-align: left;
             margin-bottom: 40px;
 
+            @media screen and (max-width: 500px) {
+                @include centerChild;
+            }
+
             i {
                 font-size: 1.5rem;
                 color: rgba(255, 255, 255, 0.8);
+
+                @media screen and (max-width: 1110px) {
+                    font-size: 1.2rem;
+                }
+                @media screen and (max-width: 700px) {
+                    font-size: 1rem;
+                }
+                @media screen and (max-width: 500px) {
+                    font-size: .8rem;
+                }
             }
 
             h4 {
@@ -57,6 +118,16 @@
                 text-transform: uppercase;
                 padding-left: 10px;
                 color: rgba(255, 255, 255, 0.8);
+
+                @media screen and (max-width: 1110px) {
+                    font-size: 1.2rem;
+                }
+                @media screen and (max-width: 700px) {
+                    font-size: 1rem;
+                }
+                @media screen and (max-width: 500px) {
+                    font-size: .8rem;
+                }
             }
         }
 
@@ -73,11 +144,27 @@
             gap: 40px;
             box-sizing: border-box;
 
+            @media screen and (max-width: 1100px) {
+                @include alignChildren(space-around);
+                flex-direction: column;
+                text-align: center;
+            }
+
             label {
                 text-transform: uppercase;
                 color: rgba(255, 255, 255, 0.8);
                 font-weight: 900;
                 letter-spacing: 3px;
+
+                @media screen and (max-width: 1100px) {
+                    font-size: .9rem;
+                }
+                @media screen and (max-width: 700px) {
+                    font-size: .7rem;
+                }
+                @media screen and (max-width: 500px) {
+                    font-size: .6rem;
+                }
             }
 
             input, textarea {
@@ -91,12 +178,24 @@
             input {
                 width: 300px;
                 height: 30px;
+
+                @media screen and (max-width: 500px) {
+                    width: 200px;
+                }
             }
 
             textarea {
                 height: 180px;
                 width: 500px;
                 background: transparent;
+
+                @media screen and (max-width: 700px) {
+                    width: 300px;
+                }
+
+                @media screen and (max-width: 500px) {
+                    width: 200px;
+                }
             }
 
             .text-form {
@@ -129,6 +228,15 @@
                     background: rgb(226,57,106);
                     font-family: $fontbold;
                     transition: .3s;
+
+                    @media screen and (max-width: 600px) {
+                        width: 150px;
+                        height: 40px;
+                        font-size: .8rem;
+                    }
+                    @media screen and (max-width: 500px) {
+                        font-size: .6rem;
+                    }
 
                     &:hover {
                         transform: translateX(5px);

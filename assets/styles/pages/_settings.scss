@@ -85,13 +85,13 @@ section {
     color: $white;
     background: url(../img/BG1.jpeg) center/cover;
     padding: 50px 120px;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 2fr;
-    grid-template-areas: 
-    "s1"
-    "s2";
-    gap: 50px;
+
+    @media screen and (max-width: 1400px) {
+        padding: 50px 50px;
+    }
+    @media screen and (max-width: 500px) {
+        padding: 50px 20px;
+    }
 }
 
 // Title //

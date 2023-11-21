@@ -7,6 +7,10 @@
     "txt img";
     background: #eee;
     font-family: $fontlight;
+
+    @media screen and (max-width: 800px) {
+      display: flex;
+  }
       
         .intro-text {
           grid-area: txt;
@@ -20,35 +24,63 @@
             font-family: $font1;
             letter-spacing: 1px;
             color: $color1;
+
+            @media screen and (max-width: 600px) {
+              font-size: 1.5rem;
+          }
           }
           h3 {
             text-transform: uppercase;
             margin-bottom: 25px;
+
+            @media screen and (max-width: 600px) {
+              font-size: 1rem;
+          }
           }
           p {
             width: 85%;
             margin: 0 auto;
             color: rgb(90, 90, 90);
             line-height: 25px;
+
+            @media screen and (max-width: 600px) {
+              font-size: .8rem;
+              line-height: 20px;
+          }
           }
           img {
             height: 70px;
             border-radius: 50px;
             margin-top: 40px;
+
+            @media screen and (max-width: 600px) {
+              height: 50px;
+          }
           }
           h4 {
             font-size: 1.4rem;
             margin-bottom: 5px;
             font-family: $fontlight;
+            @media screen and (max-width: 600px) {
+              font-size: 1.2rem;
+          }
           }
           h5 {
             font-size: 1.3rem;
             font-family: $fontlight;
             color: $color1;
+
+            @media screen and (max-width: 600px) {
+              font-size: 1rem;
+          }
           }
         }
         .intro-pic {
             grid-area: img;
             background: url(../img/Flamands.jpg) center/cover;
+
+            @media screen and (max-width: 800px) {
+              display: none;
+          }
         }
 }

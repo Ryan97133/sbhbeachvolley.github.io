@@ -1,10 +1,11 @@
 header {
     color: $white;
     background: url(../img/BG2.jpg) center/cover;
-
+    position: relative;
+    
     nav {
         height: 10vh;
-        max-width: 1100px;
+        width: 80%;
         margin: 0 auto;
         background: rgba(255, 255, 255, 0.2);  
         transform: translateY(-70px);
@@ -12,6 +13,11 @@ header {
         font-style: italic;
         font-weight: 900;
         border-radius: 0 0 100px 100px;
+
+        
+        @media screen and (max-width: 600px) {
+            height: 5vh;
+        }
 
         @keyframes AnimNav {
             to {
@@ -73,6 +79,16 @@ header {
                     letter-spacing: 2px;
                     color: white; 
 
+                    @media screen and (max-width: 800px) {
+                        font-size: .8rem;
+                    }
+                    @media screen and (max-width: 600px) {
+                        font-size: 0.5rem; ;
+                    }
+                    @media screen and (max-width: 400px) {
+                        font-size: 0.4rem; ;
+                    }
+
                     &:hover {
                         letter-spacing: 4px;
                     }
@@ -92,6 +108,10 @@ header {
     .main-header {
         height: 90vh;
         margin: 0 auto;
+
+        @media screen and (max-width: 600px) {
+            height: 95vh;
+        }
 
         .main-header-container {
                 @include fullSize;
@@ -117,6 +137,17 @@ header {
                     letter-spacing: 5px;
                     flex-direction: column;
 
+                    @media screen and (max-width: 1200px) {
+                        font-size: 2rem;
+                    }
+                    @media screen and (max-width: 800px) {
+                        font-size: 1.5rem;
+                    }
+                    @media screen and (max-width: 600px) {
+                        font-size: 1rem;
+                        width: 80%;
+                    }
+
                     .style-title-color {
                         background: linear-gradient(90deg, rgba(223, 51, 107, 1) 0%, rgba(229, 79, 95, 1) 20%, rgba(234, 104, 88, 1) 35%, rgba(242, 120, 79, 1) 36%, rgba(228, 148, 73, 1) 45%, rgba(244, 166, 51, 1) 54%, rgba(234, 195, 98, 1) 67%, rgba(214, 225, 220, 1) 88%, rgba(156, 219, 234, 1) 100%);
                         background-clip: border-box;
@@ -128,10 +159,25 @@ header {
         
                 #ht1, #ht2 {
                     font-size: 1.2rem;
+
+                    @media screen and (max-width: 1200px) {
+                        font-size: 1rem;
+                    }
+                    @media screen and (max-width: 800px) {
+                        font-size: .8rem;
+                    }
+                    @media screen and (max-width: 600px) {
+                        font-size: .6rem;
+                    }
                 }
                 #ht1 {
                     line-height: 30px;
                     width: 40%;
+
+                    @media screen and (max-width: 800px) {
+                        width: 60%;
+                        line-height: 20px;
+                    }
                 }
 
                 .style-title-text-color {
@@ -151,9 +197,18 @@ header {
                     padding: 5px 20px;
                     margin: 0 auto;
 
+                    @media screen and (max-width: 900px) {
+                        height: 60px;
+                        @include centerChild;
+                    }
+
                     #ht2 {
                         line-height: 30px;
                         text-align: center;
+
+                        @media screen and (max-width: 800px) {
+                            line-height: 20px;
+                        }
                     }
 
                     .style-text-infos-color {
@@ -173,6 +228,11 @@ header {
                     border-radius: 40px;
                     @include centerChild;
                     transition: .4s;
+
+                    @media screen and (max-width: 800px) {
+                        height: 50px;
+                        width: 50px;
+                    }
 
                     &:hover {
                         transform: scale(1.2);
