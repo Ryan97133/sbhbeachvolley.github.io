@@ -33,6 +33,7 @@ body {
   min-height: 100vh;
   font-family: roboto-light;
   color: black;
+  overflow-x: hidden;
 }
 body:before {
   content: "";
@@ -60,7 +61,7 @@ section {
   min-height: 1000px;
   color: white;
   background: url(../img/BG1.jpeg) center/cover;
-  padding: 50px 120px;
+  padding: 50px 80px;
 }
 @media screen and (max-width: 1400px) {
   section {
@@ -422,6 +423,43 @@ header .main-header .main-header-container span a i {
   font-size: 1.3rem;
 }
 
+#btn-top {
+  height: 40px;
+  width: 40px;
+  position: fixed;
+  bottom: 30px;
+  right: -50px;
+  background: rgb(226, 57, 106);
+  background-clip: border-box;
+  color: white;
+  border: 2px solid white;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  -webkit-transition: background-color 0.5s;
+  transition: background-color 0.5s;
+}
+#btn-top:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+#btn-top a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  width: 100%;
+}
+#btn-top a i {
+  rotate: 180deg;
+}
+
 .presentation {
   min-height: 300px;
   display: grid;
@@ -530,7 +568,7 @@ header .main-header .main-header-container span a i {
       justify-content: space-around;
   text-align: center;
   background: whitesmoke;
-  margin: 15px;
+  margin: 15px 15px 100px 15px;
   padding: 50px 80px;
   -webkit-box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.3);
           box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.3);
@@ -553,7 +591,7 @@ header .main-header .main-header-container span a i {
 .section1 h2 {
   font-size: 2.5rem;
   color: rgba(0, 0, 0, 0.4);
-  font-family: roboto-thinitalic;
+  font-family: roboto-bold;
   position: relative;
 }
 @media screen and (max-width: 1150px) {
@@ -642,8 +680,7 @@ header .main-header .main-header-container span a i {
   width: 100%;
   padding: 15px 30px;
   color: rgba(0, 0, 0, 0.4);
-  border: 3px dashed rgba(0, 0, 0, 0.4);
-  border-radius: 20px;
+  border-top: 3px dotted rgba(0, 0, 0, 0.2);
   margin-bottom: 50px;
   display: grid;
   grid-template-columns: 60% 20% 20%;
@@ -892,6 +929,7 @@ header .main-header .main-header-container span a i {
   display: -ms-flexbox;
   display: flex;
   text-align: left;
+  padding-left: 50px;
   margin-bottom: 40px;
 }
 @media screen and (max-width: 500px) {
@@ -950,6 +988,7 @@ header .main-header .main-header-container span a i {
 .section2 .formular form {
   width: 100%;
   margin: 0 auto;
+  padding: 10px 50px;
   text-align: left;
   display: grid;
   grid-template-columns: 2fr;
@@ -1005,8 +1044,8 @@ header .main-header .main-header-container span a i {
   border-radius: 5px;
 }
 .section2 .formular form input {
-  width: 300px;
-  height: 30px;
+  width: 400px;
+  height: 40px;
 }
 @media screen and (max-width: 500px) {
   .section2 .formular form input {
@@ -1014,8 +1053,8 @@ header .main-header .main-header-container span a i {
   }
 }
 .section2 .formular form textarea {
-  height: 180px;
-  width: 500px;
+  height: 220px;
+  width: 600px;
   background: transparent;
 }
 @media screen and (max-width: 700px) {
@@ -1072,6 +1111,7 @@ header .main-header .main-header-container span a i {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-top: 30px;
 }
 .section2 .formular form .submit-container input {
   height: 55px;

@@ -24,57 +24,10 @@
       rel="shortcut icon"
       href="./assets/img/Logo transparent sans nom.png"
     />
-    <style>
-      .top-button {
-          position: fixed;
-          z-index: 1;
-          bottom: 20px;
-          right: 20px;
-          background: rgb(226,57,106);
-          background-clip: border-box;
-          color: white;
-          border: 2px solid white;
-          border-radius: 5px;
-          cursor: pointer;
-          padding: 8px 10px;
-          font-size: 18px;
-          transition: background-color 0.3s;
-      }
-
-      .top-button:hover {
-          transform: scale(1.1);
-      }
-  </style>
-    <!-- Test sauvegarde -->
+    <script defer src="./assets/styles/style.js"></script>
   </head>
   <body>
-    <div style="height:0px;"></div>
-    <button id="myBtn" class="top-button" onclick="topFunction()" id="myBtn"><i class="fa-solid fa-arrow-up"></i></button>
-
-    <script>
-        function topFunction() {
-            document.body.scrollTop = 0; // For Safari
-            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-        }
-        
-    </script>
-    <script>
-      window.onscroll = function() {scrollFunction()};
-
-      function scrollFunction() {
-          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-              document.getElementById("myBtn").style.display = "block";
-          } else {
-              document.getElementById("myBtn").style.display = "none";
-          }
-      }
-
-      function topFunction() {
-          document.body.scrollTop = 0;
-          document.documentElement.scrollTop = 0;
-      }
-  </script>
-      <header>
+      <header id="scroll-top">
         <nav>
           <ul>
             <li>
@@ -136,6 +89,7 @@
               </div>
               <span><a href="#presentation"><i class="fa-solid fa-arrow-down"></i></a></span>
           </div>
+          <span id="btn-top"><a href="#scroll-top"><i class="fa-solid fa-arrow-down"></i></a></span>
           <!-- End header container -->
         </div>
         <!-- End main content -->
@@ -145,7 +99,7 @@
           <h2>Découvrez</h2>
           <h3>notre univers</h3>
           <p>
-            Le Saint Barth Beach Volley est avant tout une association sportive relancé par <strong>DUZANT Allan</strong> & <strong>ROMNEY Charles</strong> récemment reprise par moi. Ayant découvert ce sport par eux, je m'y suis intéressé et au vue de la communauté rencontré durant ma première année, je suis heureux d'avoir fait le pas. <br>
+            Le Saint Barth Beach Volley est avant tout une association sportive relancé par <strong>DUZANT Allan</strong> & <strong>ROMNEY Charles</strong> récemment reprise par <strong>PETER Ryan</strong>. Ayant découvert ce sport par eux, je m'y suis intéressé et au vue de la communauté rencontré durant ma première année, je suis heureux d'avoir fait le pas. <br>
             Actuellement président, j'ai de nombreux objectifs a atteindre durant mon passage comme aggrandir cette communauté et lui faire vivre de nombreux évènement que mon Bureau et moi souhaitons organiser.
           </p>
           <img src="./assets/img/Ryan.jpg" alt="Photo Président" />
