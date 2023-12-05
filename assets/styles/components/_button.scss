@@ -11,10 +11,11 @@
     border-radius: 5px;
     cursor: pointer;
     font-size: 18px;
-    transition: background-color 0.5s;
+    transition: .5s;
+    z-index: 1;
 
     &:hover {
-        transform: scale(1.1);
+        transform: scale(1.2);
     }
     a {
         @include centerChild;
