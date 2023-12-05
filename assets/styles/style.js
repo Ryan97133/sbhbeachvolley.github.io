@@ -9,7 +9,7 @@ window.addEventListener("scroll", () => {
   // Test fonction------------------------------------------
   // console.log(document.scrollY);
   //   -------------------------------------------------------
-  if (window.scrollY > 80) {
+  if (window.scrollY > 65) {
     topButton.style.right = "30px";
   } else {
     topButton.style.right = "-50px";
