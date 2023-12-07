@@ -1,6 +1,6 @@
 #btn-top {
-    height: 40px;
-    width: 40px;
+    height: 35px;
+    width: 35px;
     position: fixed;
     bottom: 30px;
     right: -50px;
@@ -13,6 +13,7 @@
     font-size: 18px;
     transition: .5s;
     z-index: 1;
+    @include centerChild;
 
     &:hover {
         transform: scale(1.2);
