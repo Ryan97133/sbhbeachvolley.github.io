@@ -104,19 +104,38 @@ header {
   position: relative;
 }
 header .menu-item1 {
-  position: absolute;
-  top: 9vh;
+  top: 8vh;
   left: 10%;
-  width: 16%;
+}
+header .menu-item2 {
+  top: 8vh;
+  left: 26%;
+  height: 13.3vh;
+}
+header .menu-item3 {
+  top: 8vh;
+  left: 42%;
+}
+header .menu-item4 {
+  top: 8vh;
+  left: 58%;
+}
+header .menu-item2 {
+  height: 13.3vh;
+}
+header .menu-item1, header .menu-item3, header .menu-item4 {
   height: 20vh;
+}
+header .menu-item1, header .menu-item2, header .menu-item3, header .menu-item4 {
+  position: absolute;
+  width: 16%;
   display: none;
   background: white;
   text-transform: uppercase;
   letter-spacing: 2px;
-  font-size: 0.9rem;
   text-align: center;
 }
-header .menu-item1 ul {
+header .menu-item1 ul, header .menu-item2 ul, header .menu-item3 ul, header .menu-item4 ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -132,13 +151,13 @@ header .menu-item1 ul {
   height: 100%;
   width: 100%;
 }
-header .menu-item1 ul li {
-  font-size: 1rem;
+header .menu-item1 ul li, header .menu-item2 ul li, header .menu-item3 ul li, header .menu-item4 ul li {
+  font-size: 0.9rem;
   font-weight: normal;
   height: 100%;
   width: 100%;
 }
-header .menu-item1 ul li a {
+header .menu-item1 ul li a, header .menu-item2 ul li a, header .menu-item3 ul li a, header .menu-item4 ul li a {
   height: 100%;
   width: 100%;
   color: black;
@@ -156,12 +175,9 @@ header .menu-item1 ul li a {
   transition: 0.5s;
   letter-spacing: 2px;
 }
-header .menu-item1 ul li a:hover {
-  font-size: 1rem;
+header .menu-item1 ul li a:hover, header .menu-item2 ul li a:hover, header .menu-item3 ul li a:hover, header .menu-item4 ul li a:hover {
   font-weight: 900;
-  -webkit-transform: scale(1.15);
-          transform: scale(1.15);
-  letter-spacing: 3px;
+  font-size: 1.1rem;
   color: rgb(223, 51, 107);
 }
 header nav {
@@ -211,13 +227,6 @@ header nav ul {
           align-items: center;
   position: relative;
 }
-header nav ul:hover li:not(:hover) {
-  background: none;
-  color: white;
-}
-header nav ul:hover li:not(:hover) button {
-  color: white;
-}
 header nav ul li {
   height: 100%;
   width: 100%;
@@ -252,7 +261,7 @@ header nav ul li {
     font-size: 0.4rem;
   }
 }
-header nav ul li #btn-nav1 {
+header nav ul li #btn-nav1, header nav ul li #btn-nav2, header nav ul li #btn-nav3, header nav ul li #btn-nav4 {
   height: 100%;
   width: 100%;
   display: -webkit-box;
@@ -264,10 +273,6 @@ header nav ul li #btn-nav1 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-header nav ul li:nth-child(1) {
-  background: rgb(255, 255, 255);
-  color: black;
 }
 header nav ul li:hover {
   background: rgb(255, 255, 255);
