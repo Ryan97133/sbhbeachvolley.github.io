@@ -24,7 +24,7 @@ footer {
             position: absolute;
             height: 1px;
             width: 84%;
-            background: rgb(226,57,106);
+            background: $color1;
             bottom: 35%;
             transform: translateX(10%);
 
@@ -124,7 +124,7 @@ footer {
                                 height: 100%;
                                 width: 100%;
                                 color: rgb(27,35,42);
-                                background: rgb(226,57,106);
+                                background:$color1;
                                 border-radius: 30px;
                                 @include centerChild;
                                 transition: .3s;

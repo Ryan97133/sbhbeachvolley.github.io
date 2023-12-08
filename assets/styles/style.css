@@ -752,7 +752,7 @@ header .main-header .main-header-container span a i {
   height: 60px;
   width: 65px;
   color: whitesmoke;
-  background: rgb(226, 57, 106);
+  background: rgb(156, 219, 234);
   border-radius: 40px;
   font-size: 1.5rem;
   display: -webkit-box;
@@ -808,7 +808,7 @@ header .main-header .main-header-container span a i {
   font-size: 1.5rem;
   font-family: allura-regular;
   font-weight: 900;
-  color: rgb(226, 57, 106);
+  color: rgb(156, 219, 234);
 }
 @media screen and (max-width: 1100px) {
   .section1 .main-event .box-event p a {
@@ -932,7 +932,7 @@ header .main-header .main-header-container span a i {
 .section2 #style-section2 {
   font-size: 2.6rem;
   font-family: allura-regular;
-  color: rgb(226, 57, 106);
+  color: rgb(156, 219, 234);
   margin-bottom: 50px;
 }
 @media screen and (max-width: 950px) {
@@ -1153,7 +1153,7 @@ header .main-header .main-header-container span a i {
   text-transform: uppercase;
   letter-spacing: 3px;
   cursor: pointer;
-  background: rgb(226, 57, 106);
+  background: rgb(156, 219, 234);
   font-family: roboto-bold;
   -webkit-transition: 0.3s;
   transition: 0.3s;
@@ -1200,7 +1200,7 @@ footer .footer-container::after {
   position: absolute;
   height: 1px;
   width: 84%;
-  background: rgb(226, 57, 106);
+  background: rgb(156, 219, 234);
   bottom: 35%;
   -webkit-transform: translateX(10%);
           transform: translateX(10%);
@@ -1354,7 +1354,7 @@ footer .footer-container .footer-right .icon-container ul li a #icon-footer {
   height: 100%;
   width: 100%;
   color: rgb(27, 35, 42);
-  background: rgb(226, 57, 106);
+  background: rgb(156, 219, 234);
   border-radius: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
