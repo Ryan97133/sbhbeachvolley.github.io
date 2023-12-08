@@ -1,6 +1,7 @@
 // CONSTANTE
 
 const topButton = document.getElementById("btn-top");
+const body = document.querySelector("body");
 const header = document.querySelector("header");
 const nav = document.querySelector("nav");
 const btnNav1 = document.getElementById("btn-nav1");
@@ -14,9 +15,6 @@ const menuItem4 = document.querySelector(".menu-item4");
 
 // BTN TOP SCROLL TOP
 window.addEventListener("scroll", () => {
-  // Test fonction--------------------------------------------
-  console.log(document.scrollY);
-  //   -------------------------------------------------------
   if (window.scrollY > 65) {
     topButton.style.right = "30px";
   } else {
@@ -24,19 +22,15 @@ window.addEventListener("scroll", () => {
   }
 });
 
-// NAV SCROLL DOWN
-
+//NAV MENU-----------------------------------------------------
 window.addEventListener("scroll", () => {
-  if (window.scrollY > 65) {
-    nav.style.top = "0";
-    nav.style.position = "sticky";
-    nav.style.zIndex = "1";
-  } else if (window.scrollY < 65) {
-    nav.style.top = "-500px";
+  if (window.scrollY > 740) {
+    nav.style.background = "rgb(156,219,234, 0.5)";
+  } else {
+    nav.style.background = "rgba(255, 255, 255, 0.4)";
   }
 });
 
-//NAV MENU-----------------------------------------------------
 window.addEventListener("mouseout", (e) => {
   if ((e.target = header)) {
     menuItem1.style.display = "none";
@@ -57,11 +51,13 @@ menuItem1.addEventListener("mouseover", (e) => {
   if ((e.target = menuItem1)) {
     menuItem1.style.display = "block";
     menuItem1.style.zIndex = "1";
+    btnNav1.style.background = "white";
   }
 });
 menuItem1.addEventListener("mouseout", (e) => {
   if ((e.target = menuItem1)) {
     menuItem1.style.display = "none";
+    btnNav1.style.background = "none";
   }
 });
 // NAV MENU 2
@@ -75,11 +71,13 @@ menuItem2.addEventListener("mouseover", (e) => {
   if ((e.target = menuItem2)) {
     menuItem2.style.display = "block";
     menuItem2.style.zIndex = "1";
+    btnNav2.style.background = "white";
   }
 });
 menuItem2.addEventListener("mouseout", (e) => {
   if ((e.target = menuItem2)) {
     menuItem2.style.display = "none";
+    btnNav2.style.background = "none";
   }
 });
 // NAV MENU 3
@@ -93,11 +91,13 @@ menuItem3.addEventListener("mouseover", (e) => {
   if ((e.target = menuItem3)) {
     menuItem3.style.display = "block";
     menuItem3.style.zIndex = "1";
+    btnNav3.style.background = "white";
   }
 });
 menuItem3.addEventListener("mouseout", (e) => {
   if ((e.target = menuItem3)) {
     menuItem3.style.display = "none";
+    btnNav3.style.background = "none";
   }
 });
 // NAV MENU 4
@@ -111,10 +111,12 @@ menuItem4.addEventListener("mouseover", (e) => {
   if ((e.target = menuItem4)) {
     menuItem4.style.display = "block";
     menuItem4.style.zIndex = "1";
+    btnNav4.style.background = "white";
   }
 });
 menuItem4.addEventListener("mouseout", (e) => {
   if ((e.target = menuItem4)) {
     menuItem4.style.display = "none";
+    btnNav4.style.background = "none";
   }
 });

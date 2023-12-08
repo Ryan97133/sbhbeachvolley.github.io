@@ -100,7 +100,7 @@ button {
 
 header {
   color: white;
-  background: url(../img/BG2.jpg) center/cover;
+  background: url(../img/BG1-3.png) center/cover;
   position: relative;
 }
 header .menu-item1 {
@@ -127,10 +127,11 @@ header .menu-item1, header .menu-item3, header .menu-item4 {
   height: 20vh;
 }
 header .menu-item1, header .menu-item2, header .menu-item3, header .menu-item4 {
-  position: absolute;
+  position: fixed;
   width: 16%;
   display: none;
   background: white;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
   text-transform: uppercase;
   letter-spacing: 2px;
   text-align: center;
@@ -177,15 +178,19 @@ header .menu-item1 ul li a, header .menu-item2 ul li a, header .menu-item3 ul li
 }
 header .menu-item1 ul li a:hover, header .menu-item2 ul li a:hover, header .menu-item3 ul li a:hover, header .menu-item4 ul li a:hover {
   font-weight: 900;
-  font-size: 1.1rem;
-  color: rgb(223, 51, 107);
+  font-size: 1rem;
 }
 header nav {
   height: 8vh;
   width: 80%;
+  left: 10%;
   margin: 0 auto;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgb(223, 51, 107)), color-stop(20%, rgb(229, 79, 95)), color-stop(35%, rgb(234, 104, 88)), color-stop(36%, rgb(242, 120, 79)), color-stop(45%, rgb(228, 148, 73)), color-stop(54%, rgb(244, 166, 51)), color-stop(67%, rgb(234, 195, 98)), color-stop(88%, rgb(214, 225, 220)), to(rgb(156, 219, 234)));
-  background-image: linear-gradient(90deg, rgb(223, 51, 107) 0%, rgb(229, 79, 95) 20%, rgb(234, 104, 88) 35%, rgb(242, 120, 79) 36%, rgb(228, 148, 73) 45%, rgb(244, 166, 51) 54%, rgb(234, 195, 98) 67%, rgb(214, 225, 220) 88%, rgb(156, 219, 234) 100%);
+  position: fixed;
+  z-index: 1;
+  background: rgba(255, 255, 255, 0.4);
+  color: black;
+  -webkit-box-shadow: 0 7px 20px 2px rgba(255, 255, 255, 0.4);
+          box-shadow: 0 7px 20px 2px rgba(255, 255, 255, 0.4);
   -webkit-transform: translateY(-70px);
           transform: translateY(-70px);
   -webkit-animation: AnimNav 1s ease forwards;
@@ -232,7 +237,6 @@ header nav ul li {
   width: 100%;
   text-transform: uppercase;
   font-size: 1.2rem;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   letter-spacing: 2px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -245,6 +249,7 @@ header nav ul li {
   -webkit-transition: 0.3s;
   transition: 0.3s;
   cursor: pointer;
+  color: rgba(0, 0, 0, 0.4);
 }
 @media screen and (max-width: 800px) {
   header nav ul li {
@@ -277,10 +282,11 @@ header nav ul li #btn-nav1, header nav ul li #btn-nav2, header nav ul li #btn-na
 header nav ul li:hover {
   background: rgb(255, 255, 255);
   color: black;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   letter-spacing: 5px;
 }
 header .main-header {
-  height: 92vh;
+  height: 100vh;
   margin: 0 auto;
 }
 @media screen and (max-width: 600px) {
@@ -293,7 +299,7 @@ header .main-header .main-header-container {
   width: 100%;
   padding: 100px 0;
   display: grid;
-  grid-template-rows: 55% 15% 15% 15%;
+  grid-template-rows: 70% 20% 10%;
   place-items: center;
   text-align: center;
   -webkit-transform: translateY(50px);
@@ -317,13 +323,8 @@ header .main-header .main-header-container {
 }
 header .main-header .main-header-container h1 {
   font-size: 3rem;
-  margin-bottom: 50px;
   color: white;
   letter-spacing: 5px;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
 }
 @media screen and (max-width: 1200px) {
   header .main-header .main-header-container h1 {
@@ -340,49 +341,6 @@ header .main-header .main-header-container h1 {
     font-size: 1rem;
     width: 80%;
   }
-}
-header .main-header .main-header-container h1 .style-title-color {
-  background: -webkit-gradient(linear, left top, right top, from(rgb(223, 51, 107)), color-stop(20%, rgb(229, 79, 95)), color-stop(35%, rgb(234, 104, 88)), color-stop(36%, rgb(242, 120, 79)), color-stop(45%, rgb(228, 148, 73)), color-stop(54%, rgb(244, 166, 51)), color-stop(67%, rgb(234, 195, 98)), color-stop(88%, rgb(214, 225, 220)), to(rgb(156, 219, 234)));
-  background: linear-gradient(90deg, rgb(223, 51, 107) 0%, rgb(229, 79, 95) 20%, rgb(234, 104, 88) 35%, rgb(242, 120, 79) 36%, rgb(228, 148, 73) 45%, rgb(244, 166, 51) 54%, rgb(234, 195, 98) 67%, rgb(214, 225, 220) 88%, rgb(156, 219, 234) 100%);
-  background-clip: border-box;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-family: allura-regular;
-}
-header .main-header .main-header-container #ht1, header .main-header .main-header-container #ht2 {
-  font-size: 1.2rem;
-}
-@media screen and (max-width: 1200px) {
-  header .main-header .main-header-container #ht1, header .main-header .main-header-container #ht2 {
-    font-size: 1rem;
-  }
-}
-@media screen and (max-width: 800px) {
-  header .main-header .main-header-container #ht1, header .main-header .main-header-container #ht2 {
-    font-size: 0.8rem;
-  }
-}
-@media screen and (max-width: 600px) {
-  header .main-header .main-header-container #ht1, header .main-header .main-header-container #ht2 {
-    font-size: 0.6rem;
-  }
-}
-header .main-header .main-header-container #ht1 {
-  line-height: 30px;
-  width: 50%;
-}
-@media screen and (max-width: 800px) {
-  header .main-header .main-header-container #ht1 {
-    width: 60%;
-    line-height: 20px;
-  }
-}
-header .main-header .main-header-container .style-title-text-color {
-  background: rgb(226, 57, 106);
-  background-clip: border-box;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-weight: 900;
 }
 header .main-header .main-header-container .style-box-header {
   background: rgba(0, 0, 0, 0.2784313725);
@@ -407,13 +365,25 @@ header .main-header .main-header-container .style-box-header {
             align-items: center;
   }
 }
-header .main-header .main-header-container .style-box-header #ht2 {
+header .main-header .main-header-container .style-box-header #ht1 {
   line-height: 30px;
   text-align: center;
 }
+@media screen and (max-width: 1200px) {
+  header .main-header .main-header-container .style-box-header #ht1 {
+    font-size: 1rem;
+  }
+}
 @media screen and (max-width: 800px) {
-  header .main-header .main-header-container .style-box-header #ht2 {
+  header .main-header .main-header-container .style-box-header #ht1 {
+    width: 60%;
     line-height: 20px;
+    font-size: 0.8rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  header .main-header .main-header-container .style-box-header #ht1 {
+    font-size: 0.6rem;
   }
 }
 header .main-header .main-header-container .style-box-header .style-text-infos-color {
@@ -475,7 +445,7 @@ header .main-header .main-header-container span a i {
   position: fixed;
   bottom: 30px;
   right: -50px;
-  background: rgb(226, 57, 106);
+  background: rgb(156, 219, 234);
   background-clip: border-box;
   color: white;
   border: 2px solid white;
