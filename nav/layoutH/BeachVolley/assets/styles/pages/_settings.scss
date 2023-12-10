@@ -1,0 +1,106 @@
+// Var - Color //
+$white: white;
+$whitesmoke: whitesmoke;
+$black: black;
+$color1: rgb(156,219,234);
+$color2: rgb(226,57,106);
+
+// Var - Font //
+$fontlight : roboto-light;
+$fontbold : roboto-bold;
+$fontthinitalic : roboto-thinitalic;
+$font1 : allura-regular;
+
+// Font //
+@font-face {
+    font-family: "roboto-light";
+    src: url(../fonts/Roboto/Roboto-Light.ttf);
+  }
+@font-face {
+    font-family: "roboto-bold";
+    src: url(../fonts/Roboto/Roboto-Bold.ttf);
+}
+@font-face {
+    font-family: "roboto-thinitalic";
+    src: url(../fonts/Roboto/Roboto-ThinItalic.ttf);
+}
+@font-face {
+    font-family: "allura-regular";
+    src: url(../fonts/Allura/Allura-Regular.ttf);
+}
+
+// Mixins //
+@mixin centerChild {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin alignChildren($space) {
+    display: flex;
+    justify-content: $space;
+    align-items: center;
+}
+@mixin fullSize {
+    height: 100%;
+    width: 100%;
+}
+
+// Global Settings //
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+// Scroll lower //
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    font-family: roboto-light;
+    color: $black;
+    overflow-x: hidden;
+
+    &:before {
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        background: $black;
+        animation: AnimBefore 1s ease forwards;
+
+        @keyframes AnimBefore {
+            to {
+                opacity: 0;
+            }
+        }
+    }
+}
+
+// Title //
+h1, h2, h3, h4, h5, h6 {
+    font-family: $fontbold;
+    letter-spacing: 2px;
+}
+
+p {
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+li {
+    list-style-type: none;
+}
+
+a, a:visited {
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+}
+button {
+    cursor: pointer;
+}

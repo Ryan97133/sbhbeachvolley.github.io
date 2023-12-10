@@ -1,0 +1,29 @@
+#btn-top {
+    height: 35px;
+    width: 35px;
+    position: fixed;
+    bottom: 30px;
+    right: -50px;
+    background: $color1;
+    background-clip: border-box;
+    color: white;
+    border: 2px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: .5s;
+    z-index: 1;
+    @include centerChild;
+
+    &:hover {
+        transform: scale(1.2);
+    }
+    a {
+        @include centerChild;
+        @include fullSize;
+
+        i {
+            rotate: 180deg;
+        }
+    }
+}

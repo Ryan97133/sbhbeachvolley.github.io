@@ -1,0 +1,231 @@
+header {
+    height: 100vh;
+    background: url(../img/BG1-3.png) center/cover;
+    position: relative;
+
+    .menu-item1 {
+        top: 8vh;
+        left: 10%;
+
+    }
+    .menu-item2 {
+        top: 8vh;
+        left: 26%;
+        height: 13.3vh;
+    }
+    .menu-item3 {
+        top: 8vh;
+        left: 42%;
+    }
+    .menu-item4 {
+        top: 8vh;
+        left: 58%;
+    }
+    .menu-item2 {
+        height: 13.3vh;
+    }
+    .menu-item1, .menu-item3, .menu-item4 {
+        height: 20vh;
+        }
+    .menu-item1, .menu-item2, .menu-item3, .menu-item4 {
+        position: fixed;
+        width: 16%;
+        display: none;
+        background: white;
+        border-top: 1px solid rgba(0, 0, 0, 0.2);
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        text-align: center;
+
+        ul {
+            @include alignChildren(space-around);
+            flex-direction: column;
+            @include fullSize;
+
+            li {
+                font-size: .9rem;
+                font-weight: normal;
+                @include fullSize;
+
+                a {
+                    @include fullSize;
+                    color: black;
+                    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+                    @include centerChild;
+                    transition: .5s;
+                    letter-spacing: 2px;
+    
+                    &:hover {
+                        font-weight: 900;
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+    }
+    
+    nav {
+        height: 8vh;
+        width: 80%;
+        left: 10%;
+        margin: 0 auto;
+        position: fixed;
+        z-index: 1;
+        background: rgb(200,232,239);
+        transform: translateY(-70px);
+        animation: AnimNav 1s ease forwards;
+        font-weight: 900;
+        transition: .5s;
+        
+        @media screen and (max-width: 600px) {
+            height: 5vh;
+        }
+
+        @keyframes AnimNav {
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+        
+        ul {
+            @include fullSize;
+            @include centerChild;
+            position: relative;
+
+            li {
+                @include fullSize;
+                text-transform: uppercase;
+                font-size: 1.2rem;
+                letter-spacing: 2px;
+                @include alignChildren(space-around);
+                transition: .3s;
+                cursor: pointer;
+                color: rgba(0, 0, 0, 0.4);
+
+                @media screen and (max-width: 800px) {
+                    font-size: .8rem;
+                }
+                @media screen and (max-width: 600px) {
+                    font-size: 0.5rem; ;
+                }
+                @media screen and (max-width: 400px) {
+                    font-size: 0.4rem; ;
+                }
+
+                #btn-nav1, #btn-nav2, #btn-nav3, #btn-nav4 {
+                    @include fullSize;
+                    @include centerChild;
+                }
+
+                &:hover {
+                    background: rgba(255, 255, 255, 1);
+                    color: black;
+                    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+                    letter-spacing: 5px;
+                }
+            }
+        }
+    }
+    .main-header {
+        height: 92vh;
+        margin: 0 auto;
+        padding-top: 100px;
+        color: $black;
+        display: grid;
+        grid-template-columns: 30% 70%;
+        grid-template-rows: 10% 90%;
+        grid-template-areas: 
+        "menu title"
+        "menu content";
+
+        @media screen and (max-width: 600px) {
+            height: 95vh;
+        }
+        .title-content {
+            grid-area: title;
+            display: flex;
+            h1 {
+                grid-area: title;
+                font-size: 2.5rem;
+                text-transform: capitalize;
+            }
+            img {
+                padding-left: 20px;
+            }
+        }
+        
+        .header-menu {
+            grid-area: menu;
+            margin: 0 auto;
+            margin-top: 100px;
+            height: 70%;
+            width: 60%;
+            @include alignChildren(space-around);
+            flex-direction: column;
+            border-radius: 30px;
+            border: 1px solid rgba(0, 0, 0, 0.4);
+            box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.3);
+
+            h3 {
+                height: 15%;
+                width: 100%;
+                text-transform: uppercase;
+                font-size: 1.5rem;
+                @include centerChild;
+                text-align: left;
+                background: rgb(200,232,239);
+                border-radius: 30px 30px 0 0;
+                border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+                
+            }
+
+            ul {
+                height: 85%;
+                width: 100%;
+                @include alignChildren(space-between);
+                flex-direction: column;
+                font-weight: bold;
+                text-transform: uppercase;
+                font-family: roboto-bold;
+
+                li {
+                    text-align: left;
+                    @include fullSize;
+                    text-transform: capitalize;
+
+                    a {
+                        @include fullSize;
+                        color: rgba(0, 0, 0, 0.4);
+                        display: flex;
+                        letter-spacing: 1px;
+                        font-size: 1rem;
+                        align-items: center;
+                        padding: 20px 30px;
+                        transition: .5s;
+
+                        &:hover {
+                            color: rgb(200,232,239);
+                            border-bottom: 1px solid rgba(0, 0, 0, 0.123);
+                            border-top: 1px solid rgba(0, 0, 0, 0.123);
+                            letter-spacing: 2px;
+                        }
+
+                        span {
+                            font-size: 1rem;
+                            padding-right: 10px;
+                        }
+                    }
+                }
+            }
+        }
+        .header-content {
+            grid-area: content;
+
+            img {
+                height: 200px;
+            }
+        }
+    }
+}
+

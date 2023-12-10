@@ -958,15 +958,7 @@ header .main-header .main-header-container span a i {
 }
 @media screen and (max-width: 500px) {
   .section2 .formular .formular-top {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    text-align: center;
   }
 }
 .section2 .formular .formular-top i {
@@ -1022,7 +1014,7 @@ header .main-header .main-header-container span a i {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1250px) {
   .section2 .formular form {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1073,22 +1065,32 @@ header .main-header .main-header-container span a i {
 }
 @media screen and (max-width: 500px) {
   .section2 .formular form input {
-    width: 200px;
+    width: 300px;
   }
 }
 .section2 .formular form textarea {
   height: 220px;
-  width: 600px;
+  width: 500px;
   background: transparent;
+}
+@media screen and (max-width: 1250px) {
+  .section2 .formular form textarea {
+    width: 600px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .section2 .formular form textarea {
+    width: 500px;
+  }
 }
 @media screen and (max-width: 700px) {
   .section2 .formular form textarea {
-    width: 300px;
+    width: 400px;
   }
 }
 @media screen and (max-width: 500px) {
   .section2 .formular form textarea {
-    width: 200px;
+    width: 300px;
   }
 }
 .section2 .formular form .text-form {
@@ -1121,6 +1123,11 @@ header .main-header .main-header-container span a i {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 20px;
+}
+@media screen and (max-width: 1250px) {
+  .section2 .formular form .text-area {
+    width: 500px;
+  }
 }
 .section2 .formular form .submit-container {
   height: 100%;
