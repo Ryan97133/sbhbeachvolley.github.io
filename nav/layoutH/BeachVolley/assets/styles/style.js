@@ -23,13 +23,6 @@ window.addEventListener("scroll", () => {
 });
 
 //NAV MENU-----------------------------------------------------
-window.addEventListener("scroll", () => {
-  if (window.scrollY > 800) {
-    nav.style.background = "rgb(156,219,234, 0.5)";
-  } else {
-    nav.style.background = "rgba(255, 255, 255, 0.4)";
-  }
-});
 
 window.addEventListener("mouseout", (e) => {
   if ((e.target = header)) {

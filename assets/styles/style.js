@@ -24,8 +24,9 @@ window.addEventListener("scroll", () => {
 
 //NAV MENU-----------------------------------------------------
 window.addEventListener("scroll", () => {
-  if (window.scrollY > 800) {
-    nav.style.background = "rgb(156,219,234, 0.5)";
+  if (window.scrollY > 750) {
+    nav.style.background =
+      "linear-gradient(110deg, rgba(200,232,239,1) 0%, rgba(170,223,235,1) 15%, rgba(138,217,234,1) 29%, rgba(65,205,235,1) 44%, rgba(28,193,190,1) 60%, rgba(14,127,152,1) 73%, rgba(7,91,109,1) 85%, rgba(6,62,74,1) 100%)";
   } else {
     nav.style.background = "rgba(255, 255, 255, 0.4)";
   }
