@@ -128,8 +128,11 @@
                     padding: 10px 10px;
                 }
 
-                i, h3, p, video {
+                i, h3, video {
                     place-self: center;
+                }
+                p {
+                    place-self: left;
                 }
                 .title-box {
                     grid-area: title-icon;

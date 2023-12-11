@@ -53,12 +53,14 @@ menuItem1.addEventListener("mouseover", (e) => {
     menuItem1.style.display = "block";
     menuItem1.style.zIndex = "1";
     btnNav1.style.background = "white";
+    btnNav1.style.color = "black";
   }
 });
 menuItem1.addEventListener("mouseout", (e) => {
   if ((e.target = menuItem1)) {
     menuItem1.style.display = "none";
     btnNav1.style.background = "none";
+    btnNav1.style.color = "white";
   }
 });
 // NAV MENU 2
@@ -73,12 +75,14 @@ menuItem2.addEventListener("mouseover", (e) => {
     menuItem2.style.display = "block";
     menuItem2.style.zIndex = "1";
     btnNav2.style.background = "white";
+    btnNav2.style.color = "black";
   }
 });
 menuItem2.addEventListener("mouseout", (e) => {
   if ((e.target = menuItem2)) {
     menuItem2.style.display = "none";
     btnNav2.style.background = "none";
+    btnNav2.style.color = "white";
   }
 });
 // NAV MENU 3
@@ -93,12 +97,14 @@ menuItem3.addEventListener("mouseover", (e) => {
     menuItem3.style.display = "block";
     menuItem3.style.zIndex = "1";
     btnNav3.style.background = "white";
+    btnNav3.style.color = "black";
   }
 });
 menuItem3.addEventListener("mouseout", (e) => {
   if ((e.target = menuItem3)) {
     menuItem3.style.display = "none";
     btnNav3.style.background = "none";
+    btnNav3.style.color = "white";
   }
 });
 // NAV MENU 4
@@ -113,11 +119,13 @@ menuItem4.addEventListener("mouseover", (e) => {
     menuItem4.style.display = "block";
     menuItem4.style.zIndex = "1";
     btnNav4.style.background = "white";
+    btnNav4.style.color = "black";
   }
 });
 menuItem4.addEventListener("mouseout", (e) => {
   if ((e.target = menuItem4)) {
     menuItem4.style.display = "none";
     btnNav4.style.background = "none";
+    btnNav4.style.color = "white";
   }
 });
