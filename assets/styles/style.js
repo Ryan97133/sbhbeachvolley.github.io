@@ -46,6 +46,12 @@ btnNav1.addEventListener("mouseenter", (e) => {
   if ((e.target = btnNav1)) {
     menuItem1.style.display = "block";
     menuItem1.style.zIndex = "1";
+    btnNav1.style.color = "black";
+  }
+});
+btnNav1.addEventListener("mouseout", (e) => {
+  if ((e.target = btnNav1)) {
+    btnNav1.style.color = "white";
   }
 });
 menuItem1.addEventListener("mouseover", (e) => {
@@ -70,6 +76,11 @@ btnNav2.addEventListener("mouseenter", (e) => {
     menuItem2.style.zIndex = "1";
   }
 });
+btnNav2.addEventListener("mouseout", (e) => {
+  if ((e.target = btnNav2)) {
+    btnNav2.style.color = "white";
+  }
+});
 menuItem2.addEventListener("mouseover", (e) => {
   if ((e.target = menuItem2)) {
     menuItem2.style.display = "block";
@@ -92,6 +103,11 @@ btnNav3.addEventListener("mouseenter", (e) => {
     menuItem3.style.zIndex = "1";
   }
 });
+btnNav3.addEventListener("mouseout", (e) => {
+  if ((e.target = btnNav3)) {
+    btnNav3.style.color = "white";
+  }
+});
 menuItem3.addEventListener("mouseover", (e) => {
   if ((e.target = menuItem3)) {
     menuItem3.style.display = "block";
@@ -112,6 +128,11 @@ btnNav4.addEventListener("mouseenter", (e) => {
   if ((e.target = btnNav4)) {
     menuItem4.style.display = "block";
     menuItem4.style.zIndex = "1";
+  }
+});
+btnNav4.addEventListener("mouseout", (e) => {
+  if ((e.target = btnNav4)) {
+    btnNav4.style.color = "white";
   }
 });
 menuItem4.addEventListener("mouseover", (e) => {
