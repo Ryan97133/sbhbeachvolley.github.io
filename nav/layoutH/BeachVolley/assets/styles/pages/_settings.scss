@@ -80,6 +80,11 @@ body {
             }
         }
     }
+
+    .wrapper {
+        background: url(../img/Bg.webp) center/cover;
+        z-index: -1;
+    }
 }
 
 // Title //
@@ -94,6 +99,7 @@ p {
 }
 li {
     list-style-type: none;
+    cursor: pointer;
 }
 
 a, a:visited {

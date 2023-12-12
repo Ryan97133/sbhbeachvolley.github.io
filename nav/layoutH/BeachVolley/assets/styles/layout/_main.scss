@@ -1,0 +1,58 @@
+main {
+    min-height: 3000px;
+
+    #historique {
+        height: 100px;
+    }
+
+    h2 {
+        font-size: 2rem;
+        text-transform: capitalize;
+        margin-bottom: 20px;
+    }
+
+    p {
+        margin-bottom: 50px;
+        line-height: 30px;
+    }
+
+    .section-1 {
+        margin-left: 27%;
+        margin-right: 4%;
+        padding: 30px 40px;
+        background: rgba(255, 255, 255, 0.4);
+        backdrop-filter: blur(5px);
+        box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.2);
+        display: block;
+        border-radius: 10px;
+
+        .box-container {
+            @include alignChildren(space-around);
+
+            .box {
+                text-align: center;
+
+                img {
+                    height: 150px;
+                    margin-bottom: 30px;
+                }
+            }
+        }
+    }
+
+    .section-2 {
+        margin-left: 27%;
+        margin-right: 4%;
+        padding: 30px 40px;
+        background: rgba(255, 255, 255, 0.4);
+        backdrop-filter: blur(5px);
+        box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.2);
+        display: block;
+        border-radius: 10px;
+
+        img {
+            display: block;
+            margin: 0 auto;
+        }
+    }
+}
