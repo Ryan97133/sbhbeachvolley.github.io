@@ -128,28 +128,20 @@ header {
         }
     }
     .main-header {
-        height: 100vh;
+        height: 15vh;
         margin: 0 auto;
-        padding: 100px 50px 60px 50px;
+        position: fixed;
         color: $black;
-        display: grid;
-        grid-template-columns: 25% 75%;
-        grid-template-rows: 10% 60% 30%;
-        grid-template-areas: 
-        "menu content"
-        "menu content"
-        "news content";
 
         @media screen and (max-width: 600px) {
             height: 95vh;
         }
         
         .header-menu {
-            grid-area: menu;
             margin: 0 auto;
             position: fixed;
-            margin-top: 3%;
-            margin-left: 0%;
+            top: 15%;
+            right: 76%;
             height: 50%;
             width: 20%;
             @include alignChildren(space-around);
@@ -211,7 +203,6 @@ header {
         }
 
         .header-news {
-            grid-area: news;
             position: fixed;
             top: 70%;
             right: 61%;
@@ -219,6 +210,7 @@ header {
             width: 50%;
             text-align: center;
             padding-top: 50px;
+            color: white;
 
             p {
                 width: 40%;
@@ -233,59 +225,6 @@ header {
 
                 &:hover {
                     transform: scale(1.1);
-                }
-            }
-        }
-
-        .header-content {
-            grid-area: content;
-            place-content: center;
-            background: rgba(255, 255, 255, 0.4);
-            padding: 20px 40px;
-            margin-right: 1.5%;
-            margin-left: 0.5%;
-            backdrop-filter: blur(5px);
-            box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.2);
-            border-radius: 10px;
-
-            .header-title {
-                @include alignChildren(center);
-                margin-bottom: 20px;
-
-
-                h1 {
-                    grid-area: title;
-                    font-size: 3rem;
-                    text-transform: capitalize;
-                }
-                img {
-                    padding-left: 20px;
-                    height: 50px;
-                }
-            }
-            h2 {
-                font-size: 2rem;
-                margin-bottom: 20px;
-                margin-left: 35px;
-                text-align: left;
-            }
-            .box-container {
-                display: block;
-                gap: 40px;
-
-                .box {
-                    display: flex;
-                    justify-content: space-around;
-                    align-items: center;
-                    
-                    p {
-                        width: 60%;
-                        line-height: 25px;
-                    }
-
-                    img {
-                        height: 200px;
-                    }
                 }
             }
         }

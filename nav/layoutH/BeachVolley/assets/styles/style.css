@@ -270,14 +270,10 @@ header nav ul li:hover {
   letter-spacing: 5px;
 }
 header .main-header {
-  height: 100vh;
+  height: 15vh;
   margin: 0 auto;
-  padding: 100px 50px 60px 50px;
+  position: fixed;
   color: black;
-  display: grid;
-  grid-template-columns: 25% 75%;
-  grid-template-rows: 10% 60% 30%;
-  grid-template-areas: "menu content" "menu content" "news content";
 }
 @media screen and (max-width: 600px) {
   header .main-header {
@@ -285,11 +281,10 @@ header .main-header {
   }
 }
 header .main-header .header-menu {
-  grid-area: menu;
   margin: 0 auto;
   position: fixed;
-  margin-top: 3%;
-  margin-left: 0%;
+  top: 15%;
+  right: 76%;
   height: 50%;
   width: 20%;
   display: -webkit-box;
@@ -382,7 +377,6 @@ header .main-header .header-menu ul li a span {
   margin-right: 2%;
 }
 header .main-header .header-news {
-  grid-area: news;
   position: fixed;
   top: 70%;
   right: 61%;
@@ -390,6 +384,7 @@ header .main-header .header-news {
   width: 50%;
   text-align: center;
   padding-top: 50px;
+  color: white;
 }
 header .main-header .header-news p {
   width: 40%;
@@ -405,67 +400,6 @@ header .main-header .header-news img {
 header .main-header .header-news img:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
-}
-header .main-header .header-content {
-  grid-area: content;
-  place-content: center;
-  background: rgba(255, 255, 255, 0.4);
-  padding: 20px 40px;
-  margin-right: 1.5%;
-  margin-left: 0.5%;
-  -webkit-backdrop-filter: blur(5px);
-          backdrop-filter: blur(5px);
-  -webkit-box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.2);
-          box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 10px;
-}
-header .main-header .header-content .header-title {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-bottom: 20px;
-}
-header .main-header .header-content .header-title h1 {
-  grid-area: title;
-  font-size: 3rem;
-  text-transform: capitalize;
-}
-header .main-header .header-content .header-title img {
-  padding-left: 20px;
-  height: 50px;
-}
-header .main-header .header-content h2 {
-  font-size: 2rem;
-  margin-bottom: 20px;
-  margin-left: 35px;
-  text-align: left;
-}
-header .main-header .header-content .box-container {
-  display: block;
-  gap: 40px;
-}
-header .main-header .header-content .box-container .box {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-header .main-header .header-content .box-container .box p {
-  width: 60%;
-  line-height: 25px;
-}
-header .main-header .header-content .box-container .box img {
-  height: 200px;
 }
 
 #btn-top {
@@ -531,6 +465,64 @@ main h2, main h3 {
 main p {
   margin-bottom: 50px;
   line-height: 30px;
+}
+main .section-0 {
+  margin-left: 27%;
+  margin-right: 4%;
+  padding: 30px 0px;
+  background: rgba(255, 255, 255, 0.4);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  -webkit-box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.2);
+  display: block;
+  border-radius: 10px;
+}
+main .section-0 .title-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+}
+main .section-0 .title-container h1 {
+  font-size: 3rem;
+  text-transform: capitalize;
+}
+main .section-0 .title-container img {
+  padding-left: 20px;
+  height: 50px;
+}
+main .section-0 h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  margin-left: 35px;
+  text-align: left;
+}
+main .section-0 .box-container {
+  display: block;
+}
+main .section-0 .box-container .box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+main .section-0 .box-container .box p {
+  width: 60%;
+  line-height: 25px;
+}
+main .section-0 .box-container .box img {
+  height: 200px;
 }
 main .section-1 {
   margin-left: 27%;
@@ -626,13 +618,13 @@ main .section-4 .first-part .title-container, main .section-4 .second-part .titl
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: none;
+      -ms-flex-pack: none;
+          justify-content: none;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 30%;
+  width: 100%;
   margin-bottom: 20px;
 }
 main .section-4 .first-part .title-container #logo-JO2024, main .section-4 .second-part .title-container #logo-JO2024 {
