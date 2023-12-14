@@ -1,14 +1,17 @@
 main {
     min-height: 3000px;
 
-    #historique {
+    #history {
         height: 100px;
     }
 
     h2 {
         font-size: 2rem;
-        text-transform: capitalize;
+    }
+
+    h2, h3 {
         margin-bottom: 20px;
+        text-transform: capitalize;
     }
 
     p {
@@ -40,6 +43,10 @@ main {
         }
     }
 
+    #field {
+        height: 100px;
+    }
+
     .section-2 {
         margin-left: 27%;
         margin-right: 4%;
@@ -54,5 +61,95 @@ main {
             display: block;
             margin: 0 auto;
         }
+    }
+    
+    #rule {
+        height: 100px;
+    }
+
+    .section-3 {
+        margin-left: 27%;
+        margin-right: 4%;
+        padding: 30px 40px;
+        background: rgba(255, 255, 255, 0.4);
+        backdrop-filter: blur(5px);
+        box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.2);
+        display: block;
+        border-radius: 10px;
+
+        p {
+            margin: 0;
+        }
+
+        .video-container {
+            display: block;
+            margin: 0 auto;
+            text-align: center;
+        }
+    }
+
+    #event {
+        height: 100px;
+    }
+
+    .section-4 {
+        margin-left: 27%;
+        margin-right: 4%;
+        padding: 30px 40px;
+        background: rgba(255, 255, 255, 0.4);
+        backdrop-filter: blur(5px);
+        box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.2);
+        display: block;
+        border-radius: 10px;
+        position: relative;
+
+        .first-part {
+            margin-bottom: 50px;
+        }
+
+        .first-part, .second-part {
+
+            .title-container {
+                @include alignChildren(space-evenly);
+                width: 30%;
+                margin-bottom: 20px;
+    
+                #logo-JO2024 {
+                    height: 60px;
+                    margin-left: 5%;
+                }
+                #logo-BeachProTour {
+                    height: 40px;
+                    margin-left: 5%;
+                }
+    
+                h3 {
+                    margin: 0;
+                }
+            }
+            .place {
+                @include alignChildren(space-around);
+                p {
+                    width: 60%;
+                    margin-right: 10%;
+
+                    a {
+                        color: black;
+                    }
+                }
+    
+                #poster-JO_2024 {
+                    height: 350px;
+                }
+
+                #poster-BeachProTour {
+                    height: 450px;
+                }
+            }
+        }
+    }
+
+    #famous-player {
+        height: 100px;
     }
 }

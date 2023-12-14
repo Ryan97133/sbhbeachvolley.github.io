@@ -15,22 +15,16 @@ const menuItem4 = document.querySelector(".menu-item4");
 
 // SOMMAIRE
 
-const Som_1 = document.getElementById("Som_1");
 const Som_1a = document.getElementById("Som_1a");
 
-const Som_2 = document.getElementById("Som_2");
 const Som_2a = document.getElementById("Som_2a");
 
-const Som_3 = document.getElementById("Som_3");
 const Som_3a = document.getElementById("Som_3a");
 
-const Som_4 = document.getElementById("Som_4");
 const Som_4a = document.getElementById("Som_4a");
 
-const Som_5 = document.getElementById("Som_5");
 const Som_5a = document.getElementById("Som_5a");
 
-const Som_6 = document.getElementById("Som_6");
 const Som_6a = document.getElementById("Som_6a");
 
 // BTN TOP SCROLL TOP
@@ -171,32 +165,8 @@ menuItem4.addEventListener("mouseout", (e) => {
 // Sommaire 1
 window.addEventListener("mouseover", (e) => {
   if (e.pageY < 800) {
-    Som_1.style.background = "rgb(7,71,84, .3)";
-    Som_1a.style.color = "white";
+    Som_1a.style.color = "white)";
   } else if (e.pageY > 800) {
-    Som_1.style.background = "none";
-    Som_1a.style.color = "rgba(0, 0, 0, .8)";
-  }
-});
-
-// Sommaire 2
-window.addEventListener("mouseover", (e) => {
-  if (e.pageY > 800 && e.pageY < 1500) {
-    Som_2.style.background = "rgb(7,71,84, .3)";
-    Som_2a.style.color = "white";
-  } else {
-    Som_2.style.background = "none";
-    Som_2a.style.color = "rgba(0, 0, 0, .8)";
-  }
-});
-
-// Sommaire 3
-window.addEventListener("mouseover", (e) => {
-  if (e.pageY > 1500 && e.pageY < 2100) {
-    Som_3.style.background = "rgb(7,71,84, .3)";
-    Som_3a.style.color = "white";
-  } else {
-    Som_3.style.background = "none";
-    Som_3a.style.color = "rgba(0, 0, 0, .8)";
+    Som_1a.style.color = "black";
   }
 });
