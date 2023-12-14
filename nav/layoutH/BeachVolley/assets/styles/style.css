@@ -34,6 +34,7 @@ body {
   font-family: roboto-light;
   color: black;
   overflow-x: hidden;
+  background: url(../img/Bg.webp) center/cover;
 }
 body:before {
   content: "";
@@ -87,7 +88,7 @@ button {
 }
 
 header {
-  height: 100vh;
+  height: 15vh;
   width: 100%;
   position: relative;
 }
@@ -270,15 +271,9 @@ header nav ul li:hover {
   letter-spacing: 5px;
 }
 header .main-header {
-  height: 15vh;
   margin: 0 auto;
   position: fixed;
   color: black;
-}
-@media screen and (max-width: 600px) {
-  header .main-header {
-    height: 95vh;
-  }
 }
 header .main-header .header-menu {
   margin: 0 auto;
@@ -376,31 +371,6 @@ header .main-header .header-menu ul li a span {
   color: rgba(0, 0, 0, 0.4);
   margin-right: 2%;
 }
-header .main-header .header-news {
-  position: fixed;
-  top: 70%;
-  right: 61%;
-  height: 100%;
-  width: 50%;
-  text-align: center;
-  padding-top: 50px;
-  color: white;
-}
-header .main-header .header-news p {
-  width: 40%;
-  text-align: center;
-  margin: 0 auto;
-}
-header .main-header .header-news img {
-  height: 40px;
-  padding-top: 10px;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-header .main-header .header-news img:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-}
 
 #btn-top {
   height: 35px;
@@ -458,9 +428,11 @@ main #history {
 main h2 {
   font-size: 2rem;
 }
+main h3 {
+  text-transform: capitalize;
+}
 main h2, main h3 {
   margin-bottom: 20px;
-  text-transform: capitalize;
 }
 main p {
   margin-bottom: 50px;
@@ -519,7 +491,7 @@ main .section-0 .box-container .box {
 }
 main .section-0 .box-container .box p {
   width: 60%;
-  line-height: 25px;
+  line-height: 30px;
 }
 main .section-0 .box-container .box img {
   height: 200px;
@@ -662,6 +634,42 @@ main .section-4 .first-part .place #poster-BeachProTour, main .section-4 .second
   height: 450px;
 }
 main #famous-player {
+  height: 100px;
+}
+main .section-5 {
+  margin-left: 27%;
+  margin-right: 4%;
+  padding: 30px 40px;
+  background: rgba(255, 255, 255, 0.4);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  -webkit-box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.2);
+  display: block;
+  border-radius: 10px;
+}
+main .section-5 h3 {
+  font-size: 1.5rem;
+}
+main .section-5 h4 {
+  text-transform: capitalize;
+  margin-bottom: 20px;
+  text-align: center;
+}
+main .section-5 img {
+  border-radius: 10px;
+  display: block;
+  margin: 0 auto;
+  height: 150px;
+}
+main .section-5 p {
+  margin-top: 20px;
+}
+main .section-5 video {
+  display: block;
+  margin: 0 auto;
+}
+main #bottom {
   height: 100px;
 }
 

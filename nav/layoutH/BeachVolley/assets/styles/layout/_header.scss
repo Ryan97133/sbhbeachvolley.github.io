@@ -1,5 +1,5 @@
 header {
-    height: 100vh;
+    height: 15vh;
     width: 100%;
     position: relative;
 
@@ -128,14 +128,9 @@ header {
         }
     }
     .main-header {
-        height: 15vh;
         margin: 0 auto;
         position: fixed;
         color: $black;
-
-        @media screen and (max-width: 600px) {
-            height: 95vh;
-        }
         
         .header-menu {
             margin: 0 auto;
@@ -198,33 +193,6 @@ header {
                             margin-right: 2%;
                         }
                     }
-                }
-            }
-        }
-
-        .header-news {
-            position: fixed;
-            top: 70%;
-            right: 61%;
-            height: 100%;
-            width: 50%;
-            text-align: center;
-            padding-top: 50px;
-            color: white;
-
-            p {
-                width: 40%;
-                text-align: center;
-                margin: 0 auto;
-            }
-
-            img {
-                height: 40px;
-                padding-top: 10px;
-                transition: .5s;
-
-                &:hover {
-                    transform: scale(1.1);
                 }
             }
         }

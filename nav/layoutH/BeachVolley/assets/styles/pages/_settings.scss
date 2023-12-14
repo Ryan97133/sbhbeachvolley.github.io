@@ -63,6 +63,7 @@ body {
     font-family: roboto-light;
     color: $black;
     overflow-x: hidden;
+    background: url(../img/Bg.webp) center/cover;
 
     &:before {
         content: "";
