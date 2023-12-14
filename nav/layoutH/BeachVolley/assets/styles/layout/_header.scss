@@ -130,8 +130,7 @@ header {
     .main-header {
         height: 100vh;
         margin: 0 auto;
-        padding: 60px 50px;
-        padding-top: 100px;
+        padding: 100px 50px 60px 50px;
         color: $black;
         display: grid;
         grid-template-columns: 25% 75%;
