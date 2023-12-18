@@ -74,6 +74,7 @@ btnNav2.addEventListener("mouseenter", (e) => {
   if ((e.target = btnNav2)) {
     menuItem2.style.display = "block";
     menuItem2.style.zIndex = "1";
+    btnNav1.style.color = "black";
   }
 });
 btnNav2.addEventListener("mouseout", (e) => {
@@ -101,6 +102,7 @@ btnNav3.addEventListener("mouseenter", (e) => {
   if ((e.target = btnNav3)) {
     menuItem3.style.display = "block";
     menuItem3.style.zIndex = "1";
+    btnNav1.style.color = "black";
   }
 });
 btnNav3.addEventListener("mouseout", (e) => {
@@ -128,6 +130,7 @@ btnNav4.addEventListener("mouseenter", (e) => {
   if ((e.target = btnNav4)) {
     menuItem4.style.display = "block";
     menuItem4.style.zIndex = "1";
+    btnNav1.style.color = "black";
   }
 });
 btnNav4.addEventListener("mouseout", (e) => {
