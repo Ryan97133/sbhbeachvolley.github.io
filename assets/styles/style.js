@@ -23,15 +23,6 @@ window.addEventListener("scroll", () => {
 });
 
 //NAV MENU-----------------------------------------------------
-window.addEventListener("scroll", () => {
-  if (window.scrollY > 750) {
-    nav.style.background =
-      "linear-gradient(110deg, rgba(200,232,239,1) 0%, rgba(170,223,235,1) 15%, rgba(138,217,234,1) 29%, rgba(65,205,235,1) 44%, rgba(28,193,190,1) 60%, rgba(14,127,152,1) 73%, rgba(7,91,109,1) 85%, rgba(6,62,74,1) 100%)";
-  } else {
-    nav.style.background = "rgba(255, 255, 255, 0.4)";
-  }
-});
-
 window.addEventListener("mouseout", (e) => {
   if ((e.target = header)) {
     menuItem1.style.display = "none";
@@ -74,7 +65,7 @@ btnNav2.addEventListener("mouseenter", (e) => {
   if ((e.target = btnNav2)) {
     menuItem2.style.display = "block";
     menuItem2.style.zIndex = "1";
-    btnNav1.style.color = "black";
+    btnNav2.style.color = "black";
   }
 });
 btnNav2.addEventListener("mouseout", (e) => {
@@ -102,7 +93,7 @@ btnNav3.addEventListener("mouseenter", (e) => {
   if ((e.target = btnNav3)) {
     menuItem3.style.display = "block";
     menuItem3.style.zIndex = "1";
-    btnNav1.style.color = "black";
+    btnNav3.style.color = "black";
   }
 });
 btnNav3.addEventListener("mouseout", (e) => {
@@ -130,7 +121,7 @@ btnNav4.addEventListener("mouseenter", (e) => {
   if ((e.target = btnNav4)) {
     menuItem4.style.display = "block";
     menuItem4.style.zIndex = "1";
-    btnNav1.style.color = "black";
+    btnNav4.style.color = "black";
   }
 });
 btnNav4.addEventListener("mouseout", (e) => {
