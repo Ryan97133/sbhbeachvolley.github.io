@@ -427,6 +427,7 @@ main #history {
 }
 main h2 {
   font-size: 2rem;
+  text-transform: capitalize;
 }
 main h3 {
   text-transform: capitalize;
