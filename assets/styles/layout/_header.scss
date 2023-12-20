@@ -1,25 +1,19 @@
 header {
-    color: $white;
     background: url(../img/BG1-3.png) center/cover;
     position: relative;
 
     .menu-item1 {
-        top: 8vh;
-        left: 10%;
-
+        left: 5%;
     }
     .menu-item2 {
-        top: 8vh;
-        left: 26%;
+        left: 17.85%;
         height: 13.3vh;
     }
     .menu-item3 {
-        top: 8vh;
-        left: 42%;
+        left: 30.7%;
     }
     .menu-item4 {
-        top: 8vh;
-        left: 58%;
+        left: 56.45%;
     }
     .menu-item2 {
         height: 13.3vh;
@@ -29,7 +23,8 @@ header {
         }
     .menu-item1, .menu-item2, .menu-item3, .menu-item4 {
         position: fixed;
-        width: 16%;
+        top: 10vh;
+        width: 12.85%;
         display: none;
         background: white;
         border-top: 1px solid rgba(0, 0, 0, 0.2);
@@ -66,9 +61,8 @@ header {
     
     nav {
         height: 10vh;
-        width: 80%;
-        left: 10%;
-        margin: 0 auto;
+        width: 90%;
+        left: 5%;
         position: fixed;
         z-index: 1;
         background: rgba(255, 255, 255, 0.4);

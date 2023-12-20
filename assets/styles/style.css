@@ -104,21 +104,17 @@ header {
   position: relative;
 }
 header .menu-item1 {
-  top: 8vh;
-  left: 10%;
+  left: 5%;
 }
 header .menu-item2 {
-  top: 8vh;
-  left: 26%;
+  left: 17.85%;
   height: 13.3vh;
 }
 header .menu-item3 {
-  top: 8vh;
-  left: 42%;
+  left: 30.7%;
 }
 header .menu-item4 {
-  top: 8vh;
-  left: 58%;
+  left: 56.45%;
 }
 header .menu-item2 {
   height: 13.3vh;
@@ -128,7 +124,8 @@ header .menu-item1, header .menu-item3, header .menu-item4 {
 }
 header .menu-item1, header .menu-item2, header .menu-item3, header .menu-item4 {
   position: fixed;
-  width: 16%;
+  top: 10vh;
+  width: 12.85%;
   display: none;
   background: white;
   border-top: 1px solid rgba(0, 0, 0, 0.2);
@@ -182,9 +179,8 @@ header .menu-item1 ul li a:hover, header .menu-item2 ul li a:hover, header .menu
 }
 header nav {
   height: 10vh;
-  width: 80%;
-  left: 10%;
-  margin: 0 auto;
+  width: 90%;
+  left: 5%;
   position: fixed;
   z-index: 1;
   background: rgba(255, 255, 255, 0.4);
