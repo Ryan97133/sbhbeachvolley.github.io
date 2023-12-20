@@ -181,7 +181,7 @@ header .menu-item1 ul li a:hover, header .menu-item2 ul li a:hover, header .menu
   font-size: 1rem;
 }
 header nav {
-  height: 8vh;
+  height: 10vh;
   width: 80%;
   left: 10%;
   margin: 0 auto;
@@ -197,7 +197,6 @@ header nav {
   font-weight: 900;
   -webkit-transition: 0.5s;
   transition: 0.5s;
-  color: white;
 }
 @media screen and (max-width: 600px) {
   header nav {
@@ -264,6 +263,26 @@ header nav ul li {
   header nav ul li {
     font-size: 0.4rem;
   }
+}
+header nav ul li a {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+header nav ul li #Logo {
+  background: none;
+  border: none;
+}
+header nav ul li #Logo img {
+  height: 60px;
 }
 header nav ul li #btn-nav1, header nav ul li #btn-nav2, header nav ul li #btn-nav3, header nav ul li #btn-nav4 {
   height: 100%;
@@ -367,6 +386,7 @@ header .main-header .main-header-container .style-box-header {
 header .main-header .main-header-container .style-box-header #ht1 {
   line-height: 30px;
   text-align: center;
+  color: white;
 }
 @media screen and (max-width: 1200px) {
   header .main-header .main-header-container .style-box-header #ht1 {
@@ -734,8 +754,11 @@ header .main-header .main-header-container span a i {
     padding: 10px 10px;
   }
 }
-.section1 .main-event .box-event i, .section1 .main-event .box-event h3, .section1 .main-event .box-event p, .section1 .main-event .box-event video {
+.section1 .main-event .box-event i, .section1 .main-event .box-event h3, .section1 .main-event .box-event video {
   place-self: center;
+}
+.section1 .main-event .box-event p {
+  place-self: left;
 }
 .section1 .main-event .box-event .title-box {
   grid-area: title-icon;
